@@ -59,7 +59,8 @@ a:hover {
 
 html {
   background-color: #ffffff;
-  padding: 5%; }
+  /*padding: 5%;*/
+  /*Reserved for larger sizes*/ }
 
 body {
   font-family: "Philosopher", sans-serif;
@@ -83,54 +84,55 @@ header {
     margin-left: 1em;
     margin-top: 1.2em; }
 
-.page-wrapper {
+#zen-intro {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; }
-  .page-wrapper .intro {
-    grid-column: 2/5;
-    grid-row: 1; }
-  .page-wrapper .sidebar {
-    grid-column: 1/2;
-    grid-row: 1;
-    margin-left: 1em;
-    border: 2px solid #fff;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  /*This is what's causing the weird gap*/ }
+
+.sidebar {
+  grid-row: 2; }
+
+/*border: 2px solid #fff;
+border-radius: 10px;
+background-image: url(images/image1.jpg) ;
+margin-top: 3em;*/
+/*h3{
+  font-family: $fonts-headline;
+  font-size: x-large;
+  text-align: center;
+}*/
+nav ul {
+  list-style: none; }
+  nav ul :hover {
+    width: 200px;
+    height: 100px;
     border-radius: 10px;
-    background-image: url(images/image1.jpg);
-    margin-top: 3em; }
-    .page-wrapper .sidebar h3 {
-      font-family: "Croissant One", cursive;
-      font-size: x-large;
-      text-align: center; }
-    .page-wrapper .sidebar nav ul {
-      list-style: none; }
-      .page-wrapper .sidebar nav ul :hover {
-        width: 200px;
-        height: 100px;
-        border-radius: 10px;
-        background: #ff9cb9;
-        transition: width 2s, height 2s, margin 2s;
-        margin: 50px auto 0;
-        font-size: 1.2em;
-        font-family: "Croissant One", cursive;
-        background-image: url(images/image.jpg); }
-    .page-wrapper .sidebar nav li {
-      background-color: #f5a6bd49;
-      margin: 20px;
-      font-size: 2em;
-      font-family: "Philosopher", sans-serif;
-      border: 1px #FA9BB7;
-      list-style-position: unset; }
-      .page-wrapper .sidebar nav li a {
-        color: inherit; }
-      .page-wrapper .sidebar nav li a {
-        background: linear-gradient(to right, #f5a6bd49, #f5a6bd49), linear-gradient(to right, #FA9BB7, #FA9BB7, #FA9BB7);
-        background-size: 100% 3px, 0 3px;
-        background-position: 100% 100%, 0 100%;
-        background-repeat: no-repeat;
-        transition: background-size 400ms; }
-      .page-wrapper .sidebar nav li a:hover {
-        background-size: 0 3px, 100% 3px;
-        color: #222020; }
+    background: #ff9cb9;
+    transition: width 2s, height 2s, margin 2s;
+    margin: 50px auto 0;
+    font-size: 1.2em;
+    font-family: "Croissant One", cursive;
+    background-image: url(images/image.jpg); }
+nav li {
+  background-color: #f5a6bd49;
+  margin: 20px;
+  font-size: 2em;
+  font-family: "Philosopher", sans-serif;
+  border: 1px #FA9BB7;
+  list-style-position: unset;
+  /* a:hover {
+     background-size: 0 3px, 100% 3px;
+     color: #222020;
+   }*/ }
+  nav li a {
+    color: inherit; }
+  nav li a {
+    background: linear-gradient(to right, #f5a6bd49, #f5a6bd49), linear-gradient(to right, #FA9BB7, #FA9BB7, #FA9BB7);
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms; }
 
 .zen-resources ul {
   list-style: none; }
