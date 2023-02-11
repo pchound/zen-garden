@@ -1,4 +1,6 @@
 
+@media only screen and (min-width: 2rem) {
+
 @import "variables";
 @import "atoms";
 @use "molecules";
@@ -10,7 +12,7 @@
 html {
   background-color: $background-color;
   
-  /*padding: 5%;*/
+  padding: 5%;
   /*Reserved for larger sizes*/
 }
 
@@ -60,18 +62,17 @@ header
 .sidebar {
 
   grid-row: 2;
-}
 
-/*border: 2px solid #fff;
+
+border: 2px solid #fff;
 border-radius: 10px;
 background-image: url(images/image1.jpg) ;
-margin-top: 3em;*/
-
-/*h3{
+margin-top: 3em;
+h3{
   font-family: $fonts-headline;
   font-size: x-large;
   text-align: center;
-}*/
+}
 nav{
 
 ul{
@@ -127,10 +128,10 @@ li{
     transition: background-size 400ms;
   }
   
- /* a:hover {
+  a:hover {
     background-size: 0 3px, 100% 3px;
     color: #222020;
-  }*/
+  }
   
 
    
@@ -203,4 +204,25 @@ li{
      
       }
       
+    
+    }
+  }
 
+  /* -------------------------------------------------------Medium  --------------------------------------------------------------*/
+
+@media only screen and (min-width: 35rem) {
+
+
+
+   
+
+}
+
+
+
+/* -----------------------------------------------Large ----------------------------------------------------------------- */
+
+
+@media only screen and (min-width: 64rem) {
+
+}
