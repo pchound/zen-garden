@@ -239,12 +239,14 @@ li{
 .intro{
   grid-column: 1/5;
   grid-row: 1;
-
+  
 
   
   header{
     width: 100%;
     border-radius: 5px;
+    grid-row: 1;
+    grid-column:1/5 ;
 
     h2{
       :hover{

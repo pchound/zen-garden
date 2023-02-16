@@ -233,7 +233,9 @@ main h2 {
       grid-row: 1; }
       .page-wrapper .intro header {
         width: 100%;
-        border-radius: 5px; }
+        border-radius: 5px;
+        grid-row: 1;
+        grid-column: 1/5; }
         .page-wrapper .intro header h2 :hover {
           color: #ffd0d8;
           font-size: 140px;
