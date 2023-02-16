@@ -1,24 +1,22 @@
+@import "variables";
+@import "atoms";
+@import "molecules";
+@import "organisms";
 
 @media only screen and (min-width: 2rem) {
 
-@import "variables";
-@import "atoms";
-@use "molecules";
-@import "organisms";
 
-* {
-  box-sizing: border-box;
-}
+
+
 html {
   background-color: $background-color;
   
-  padding: 5%;
-  /*Reserved for larger sizes*/
+
 }
 
 body {
   font-family: $fonts-body;
-  font-size: 85%;
+
   color: $text-dark;
   background-color: $primary;
   margin: 0;
@@ -30,7 +28,7 @@ header
   height: 400px;
   background-image: url(images/heade.jpg);
   margin: auto;
-  border-radius: 15px;
+ 
  
 
       h2, h1 {
@@ -51,13 +49,6 @@ header
 
 
 
-#zen-intro
-{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  /*This is what's causing the weird gap*/
-}
 
 .sidebar {
 
@@ -68,6 +59,7 @@ border: 2px solid #fff;
 border-radius: 10px;
 background-image: url(images/image1.jpg) ;
 margin-top: 3em;
+
 h3{
   font-family: $fonts-headline;
   font-size: x-large;
@@ -97,7 +89,7 @@ list-style:none ;
 li{
   background-color:$asidecolor;
   margin: 20px;
-  font-size: $asidefonts;
+  font-size: larger;
   font-family: $fonts-body;
   border: 1px $grey-sidebar ;
 
@@ -162,7 +154,7 @@ li{
       li{
         background-color:$asidecolor;
         margin: 20px;
-        font-size: $asidefonts;
+        font-size: x-large;
         font-family: $fonts-body;
         border: 1px $grey-sidebar ;
     
@@ -225,4 +217,75 @@ li{
 
 @media only screen and (min-width: 64rem) {
 
+  html {
+    background-color: $background-color;
+    
+  
+  }
+  
+  body {
+    font-family: $fonts-body;
+  
+    color: $text-dark;
+    background-color: $primary;
+    margin: 0;
+    
+  }
+
+.page-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+.intro{
+  grid-column: 1/5;
+  grid-row: 1;
+
+
+  
+  header{
+    width: 100%;
+    border-radius: 5px;
+
+    h2{
+      :hover{
+        color: rgb(255, 208, 216);
+      font-size: 140px;
+          
+          transition: font-size 2s;
+          margin: 50px auto 0;
+      }
+    }
+  }
+
+  .summary{
+    font-size: x-large;
+    margin-left: 18em;
+ grid-row: 1;
+  }
 }
+
+}
+
+.sidebar{
+  grid-row: 1;
+  grid-column: 1/2;
+  margin-top: 26em;
+ 
+
+ nav{
+  ul{
+    li{
+      font-size: x-large ;
+      margin: 20px;
+      border-radius: 5px;
+    }
+  }
+ }
+
+}
+
+
+    }
+
+
+

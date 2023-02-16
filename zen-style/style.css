@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
 h2 {
   margin: 0; }
 
@@ -50,119 +53,204 @@ a {
 a:hover {
   border-color: #669190; }
 
-@use "molecules";
-.intro {
-  padding: 5%; }
+h2 {
+  margin: 0; }
 
-* {
-  box-sizing: border-box; }
+h3,
+h4 {
+  margin: 0; }
 
-html {
-  background-color: #ffffff;
-  /*padding: 5%;*/
-  /*Reserved for larger sizes*/ }
+h1 {
+  font-size: 6em;
+  color: #fff;
+  display: inline-block;
+  font-weight: normal; }
 
-body {
+h2 {
+  color: #fff;
+  font-weight: 900;
+  /* Heavy */
+  letter-spacing: 1px;
+  line-height: 1em; }
+
+h3 {
+  font-size: 2.25em;
+  font-weight: 200;
+  /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0; }
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 200;
+  /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0; }
+
+p {
   font-family: "Philosopher", sans-serif;
-  font-size: 85%;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0.5em 0;
+  margin: 0; }
+
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: #060606;
-  background-color: #ffffff;
-  margin: 0;
-  padding: 1em; }
+  text-decoration: none;
+  transition: border-color 0.2s ease-in-out; }
 
-header {
-  height: 400px;
-  background-image: url(images/heade.jpg);
-  margin: auto;
-  border-radius: 15px; }
-  header h2, header h1 {
-    font-family: "Aokahori"; }
-  header h2 {
-    font-size: 50px;
-    margin-left: 6em; }
-  header h1 {
-    margin-left: 1em;
-    margin-top: 1.2em; }
+a:hover {
+  border-color: #669190; }
 
-#zen-intro {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  /*This is what's causing the weird gap*/ }
+.summary {
+  padding: 15% 0; }
+  .summary a {
+    color: #fff; }
 
-.sidebar {
-  grid-row: 2; }
+.preamble {
+  background: rgba(255, 255, 255, 0.9);
+  color: #060606;
+  margin-left: -30%;
+  padding: 5% 5% 5% 30%; }
 
-/*border: 2px solid #fff;
-border-radius: 10px;
-background-image: url(images/image1.jpg) ;
-margin-top: 3em;*/
-/*h3{
-  font-family: $fonts-headline;
-  font-size: x-large;
-  text-align: center;
-}*/
-nav ul {
-  list-style: none; }
-  nav ul :hover {
-    width: 200px;
-    height: 100px;
+main h2 {
+  font-family: "Aokahori"; }
+
+@media only screen and (min-width: 2rem) {
+  html {
+    background-color: #ffffff; }
+
+  body {
+    font-family: "Philosopher", sans-serif;
+    color: #060606;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 1em; }
+
+  header {
+    height: 400px;
+    background-image: url(images/heade.jpg);
+    margin: auto; }
+    header h2, header h1 {
+      font-family: "Aokahori"; }
+    header h2 {
+      font-size: 50px;
+      margin-left: 6em; }
+    header h1 {
+      margin-left: 1em;
+      margin-top: 1.2em; }
+
+  .sidebar {
+    grid-row: 2;
+    border: 2px solid #fff;
     border-radius: 10px;
-    background: #ff9cb9;
-    transition: width 2s, height 2s, margin 2s;
-    margin: 50px auto 0;
-    font-size: 1.2em;
-    font-family: "Croissant One", cursive;
-    background-image: url(images/image.jpg); }
-nav li {
-  background-color: #f5a6bd49;
-  margin: 20px;
-  font-size: 2em;
-  font-family: "Philosopher", sans-serif;
-  border: 1px #FA9BB7;
-  list-style-position: unset;
-  /* a:hover {
-     background-size: 0 3px, 100% 3px;
-     color: #222020;
-   }*/ }
-  nav li a {
-    color: inherit; }
-  nav li a {
-    background: linear-gradient(to right, #f5a6bd49, #f5a6bd49), linear-gradient(to right, #FA9BB7, #FA9BB7, #FA9BB7);
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms; }
+    background-image: url(images/image1.jpg);
+    margin-top: 3em; }
+    .sidebar h3 {
+      font-family: "Croissant One", cursive;
+      font-size: x-large;
+      text-align: center; }
+    .sidebar nav ul {
+      list-style: none; }
+      .sidebar nav ul :hover {
+        width: 200px;
+        height: 100px;
+        border-radius: 10px;
+        background: #ff9cb9;
+        transition: width 2s, height 2s, margin 2s;
+        margin: 50px auto 0;
+        font-size: 1.2em;
+        font-family: "Croissant One", cursive;
+        background-image: url(images/image.jpg); }
+    .sidebar nav li {
+      background-color: #f5a6bd49;
+      margin: 20px;
+      font-size: larger;
+      font-family: "Philosopher", sans-serif;
+      border: 1px #FA9BB7;
+      list-style-position: unset; }
+      .sidebar nav li a {
+        color: inherit; }
+      .sidebar nav li a {
+        background: linear-gradient(to right, #f5a6bd49, #f5a6bd49), linear-gradient(to right, #FA9BB7, #FA9BB7, #FA9BB7);
+        background-size: 100% 3px, 0 3px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms; }
+      .sidebar nav li a:hover {
+        background-size: 0 3px, 100% 3px;
+        color: #222020; }
+    .sidebar .zen-resources ul {
+      list-style: none; }
+      .sidebar .zen-resources ul :hover {
+        width: 200px;
+        height: 100px;
+        border-radius: 10px;
+        background: #ff9cb9;
+        transition: width 2s, height 2s, margin 2s;
+        margin: 50px auto 0;
+        font-size: 1.2em;
+        font-family: "Croissant One", cursive;
+        background-image: url(images/image.jpg); }
+    .sidebar .zen-resources li {
+      background-color: #f5a6bd49;
+      margin: 20px;
+      font-size: x-large;
+      font-family: "Philosopher", sans-serif;
+      border: 1px #FA9BB7;
+      list-style-position: unset; }
+      .sidebar .zen-resources li a {
+        color: inherit; }
+      .sidebar .zen-resources li a {
+        background: linear-gradient(to right, #f5a6bd49, #f5a6bd49), linear-gradient(to right, #FA9BB7, #FA9BB7, #FA9BB7);
+        background-size: 100% 3px, 0 3px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms; }
+      .sidebar .zen-resources li a:hover {
+        background-size: 0 3px, 100% 3px;
+        color: #222020; } }
+/* -------------------------------------------------------Medium  --------------------------------------------------------------*/
+/* -----------------------------------------------Large ------------------------------------------------------------- */
+@media only screen and (min-width: 64rem) {
+  html {
+    background-color: #ffffff; }
 
-.zen-resources ul {
-  list-style: none; }
-  .zen-resources ul :hover {
-    width: 200px;
-    height: 100px;
-    border-radius: 10px;
-    background: #ff9cb9;
-    transition: width 2s, height 2s, margin 2s;
-    margin: 50px auto 0;
-    font-size: 1.2em;
-    font-family: "Croissant One", cursive;
-    background-image: url(images/image.jpg); }
-.zen-resources li {
-  background-color: #f5a6bd49;
-  margin: 20px;
-  font-size: 2em;
-  font-family: "Philosopher", sans-serif;
-  border: 1px #FA9BB7;
-  list-style-position: unset; }
-  .zen-resources li a {
-    color: inherit; }
-  .zen-resources li a {
-    background: linear-gradient(to right, #f5a6bd49, #f5a6bd49), linear-gradient(to right, #FA9BB7, #FA9BB7, #FA9BB7);
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms; }
-  .zen-resources li a:hover {
-    background-size: 0 3px, 100% 3px;
-    color: #222020; }
+  body {
+    font-family: "Philosopher", sans-serif;
+    color: #060606;
+    background-color: #ffffff;
+    margin: 0; }
+
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .page-wrapper .intro {
+      grid-column: 1/5;
+      grid-row: 1; }
+      .page-wrapper .intro header {
+        width: 100%;
+        border-radius: 5px; }
+        .page-wrapper .intro header h2 :hover {
+          color: #ffd0d8;
+          font-size: 140px;
+          transition: font-size 2s;
+          margin: 50px auto 0; }
+      .page-wrapper .intro .summary {
+        font-size: x-large;
+        margin-left: 18em;
+        grid-row: 1; }
+
+  .sidebar {
+    grid-row: 1;
+    grid-column: 1/2;
+    margin-top: 26em; }
+    .sidebar nav ul li {
+      font-size: x-large;
+      margin: 20px;
+      border-radius: 5px; } }
 
 /*# sourceMappingURL=style.css.map */

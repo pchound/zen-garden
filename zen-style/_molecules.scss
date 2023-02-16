@@ -1,7 +1,7 @@
 
 
-@use 'variables' as *;
-@use 'atoms';
+@import 'variables';
+@import 'atoms';
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
