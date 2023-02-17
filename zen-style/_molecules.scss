@@ -9,18 +9,37 @@
 
 
 .summary {
- 
-  padding: 15% 0;
+ margin-top: 23em;
+ font-size: larger;
+  margin-left: 1em;
+grid-row: 1;
+grid-column: 2/5;
+background-image: url(images/back2.jpg) ;
+height: 300px;
+text-shadow: #000  .4px .4px;
+
 
   a {
-    color: $text-light; //in this case the link wants to be light instead of the default dark
+    color: $accent1; 
+    :hover{
+      color: rgb(255, 208, 216);
+    font-size: 140px;
+        
+        transition: font-size 2s;
+        margin: 50px auto 0;
+    }
   }
 }
 .preamble {
-  background: rgba(255, 255, 255, 0.9);
+  grid-row: 1/2;
   color: $text-dark;
-  margin-left: -30%;
-  padding: 5% 5% 5% 30%;
+  margin-top: 33em;
+  text-shadow: #000  .4px .4px;
+
+  margin-left: 1em;
+    grid-column: 2/5;
+    
+  
 }
 
 main{

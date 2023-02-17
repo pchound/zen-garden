@@ -239,6 +239,8 @@ li{
 .intro{
   grid-column: 1/5;
   grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   
 
   
@@ -247,6 +249,8 @@ li{
     border-radius: 5px;
     grid-row: 1;
     grid-column:1/5 ;
+    z-index: 1;
+    margin: 1em;
 
     h2{
       :hover{
@@ -259,11 +263,12 @@ li{
     }
   }
 
-  .summary{
-    font-size: x-large;
-    margin-left: 18em;
- grid-row: 1;
+
+ 
+
   }
+
+  
 }
 
 }
@@ -271,7 +276,7 @@ li{
 .sidebar{
   grid-row: 1;
   grid-column: 1/2;
-  margin-top: 26em;
+  margin-top: 27em;
  
 
  nav{
@@ -287,7 +292,7 @@ li{
 }
 
 
-    }
+    
 
 
 
