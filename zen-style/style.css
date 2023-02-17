@@ -100,14 +100,10 @@ a:hover {
   border-color: #669190; }
 
 .summary {
-  margin-top: 23em;
   font-size: larger;
-  margin-left: 1em;
-  grid-row: 1;
-  grid-column: 2/5;
+  margin-left: .8em;
   background-image: url(images/back2.jpg);
-  height: 300px;
-  text-shadow: #000  .4px .4px; }
+  text-shadow: #000 .4px .4px; }
   .summary a {
     color: #669190; }
     .summary a :hover {
@@ -117,12 +113,9 @@ a:hover {
       margin: 50px auto 0; }
 
 .preamble {
-  grid-row: 1/2;
   color: #060606;
-  margin-top: 33em;
-  text-shadow: #000  .4px .4px;
-  margin-left: 1em;
-  grid-column: 2/5; }
+  text-shadow: #000 .4px .4px;
+  margin-left: 1em; }
 
 main h2 {
   font-family: "Aokahori"; }
@@ -138,16 +131,32 @@ main h2 {
     margin: 0;
     padding: 1em; }
 
-  header {
+  .intro .summary {
+    margin-top: 1em;
+    grid-row: 1;
+    grid-column: 2/5;
+    height: 110px; }
+    .intro .summary a {
+      color: #669190; }
+      .intro .summary a :hover {
+        color: #ffd0d8;
+        font-size: 140px;
+        transition: font-size 2s;
+        margin: 50px auto 0; }
+  .intro .preamble {
+    grid-row: 1;
+    grid-column: 2/5;
+    margin-top: 0; }
+  .intro header {
     height: 400px;
     background-image: url(images/heade.jpg);
-    margin: auto; }
-    header h2, header h1 {
+    margin: 1em; }
+    .intro header h2, .intro header h1 {
       font-family: "Aokahori"; }
-    header h2 {
+    .intro header h2 {
       font-size: 50px;
       margin-left: 6em; }
-    header h1 {
+    .intro header h1 {
       margin-left: 1em;
       margin-top: 1.2em; }
 
@@ -156,7 +165,7 @@ main h2 {
     border: 2px solid #fff;
     border-radius: 10px;
     background-image: url(images/image1.jpg);
-    margin-top: 3em; }
+    margin-top: 1em; }
     .sidebar h3 {
       font-family: "Croissant One", cursive;
       font-size: x-large;
@@ -252,7 +261,23 @@ main h2 {
           color: #ffd0d8;
           font-size: 140px;
           transition: font-size 2s;
-          margin: 50px auto 0; } }
+          margin: 50px auto 0; }
+    .page-wrapper .summary {
+      margin-top: 23em;
+      grid-row: 1;
+      grid-column: 2/5;
+      height: 300px; }
+      .page-wrapper .summary a {
+        color: #669190; }
+        .page-wrapper .summary a :hover {
+          color: #ffd0d8;
+          font-size: 140px;
+          transition: font-size 2s;
+          margin: 50px auto 0; }
+    .page-wrapper .preamble {
+      grid-row: 1/2;
+      grid-column: 2/5;
+      margin-top: 33em; } }
 .sidebar {
   grid-row: 1;
   grid-column: 1/2;
