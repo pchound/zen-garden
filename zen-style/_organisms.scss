@@ -251,7 +251,7 @@
     
     @media only screen and (min-width: 64rem) {
     
-      @keyframes pulse {
+      @keyframes grw {
         from {
             transform: scale(0.5);
             opacity: .8;
@@ -262,7 +262,7 @@
         }
     }
     
-    @keyframes fade {
+    @keyframes grw2 {
         from {
             opacity: .5;
         }
@@ -294,6 +294,9 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
     
+      
+
+
     .intro{
       grid-column: 1/5;
       grid-row: 1;
@@ -333,8 +336,8 @@
               transition: font-size 2s;
               margin: 50px auto 0;
 
-              animation-name: pulse, fade;
-              animation-duration: 1s; 
+              animation-name: grw, grw2;
+              animation-duration: .8s; 
               
               animation-direction: alternate-reverse;
               
@@ -380,7 +383,13 @@
          
        }
        
+       #zen-supporting{
+        grid-row: 1;
+     grid-column: 2/5;
+     margin-top: 48em;
+     margin-left: 1.5em;
       
+          }
     }
     
     }
@@ -399,8 +408,13 @@
           border-radius: 5px;
         }
       }
+
+      
      }
     
+
+
+
     }
     
     
