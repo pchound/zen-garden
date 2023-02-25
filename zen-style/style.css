@@ -358,6 +358,44 @@ main h2 {
         background-size: 0 3px, 100% 3px;
         color: #222020; } }
 /* -------------------------------------------------------Medium  --------------------------------------------------------------*/
+@media only screen and (min-width: 35rem) {
+  body {
+    font-family: "Philosopher", sans-serif;
+    color: #060606;
+    background-color: #ffaec537;
+    margin: 0; }
+
+  .intro .summary {
+    margin-top: 1em;
+    grid-row: 1;
+    grid-column: 2/5;
+    height: 110px; }
+    .intro .summary a {
+      color: #669190; }
+      .intro .summary a :hover {
+        color: #ffd0d8;
+        font-size: 140px;
+        transition: font-size 2s;
+        margin: 50px auto 0; }
+  .intro .preamble {
+    grid-row: 1;
+    grid-column: 2/5;
+    margin-top: 0; }
+  .intro header {
+    height: 260px;
+    background-image: url(images/heade.jpg);
+    margin: 0em;
+    border-radius: 7px;
+    width: 99%; }
+    .intro header h2, .intro header h1 {
+      font-family: "Aokahori"; }
+    .intro header h2 {
+      font-size: 50px;
+      margin-left: 1.5em; }
+    .intro header h1 {
+      margin-left: 2em;
+      margin-top: 1.2em;
+      font-size: 46px; } }
 /* -----------------------------------------------Large ------------------------------------------------------------- */
 @media only screen and (min-width: 64rem) {
   @keyframes grw {

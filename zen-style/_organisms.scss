@@ -238,12 +238,81 @@
     
     @media only screen and (min-width: 35rem) {
     
-    
+
+
+
+      
+      body {
+        font-family: $fonts-body;
+      
+        color: $text-dark;
+        background-color: $lcolor;
+        margin: 0;
+        
+
+
+      }
     
        
+    .intro{
+      .summary {
+       margin-top: 1em;
+        grid-row: 1;
+        grid-column: 2/5;
+        height: 110px;
+        
+        
+          a {
+            color: $accent1; 
+            :hover{
+              color: rgb(255, 208, 216);
+            font-size: 140px;
+                
+                transition: font-size 2s;
+                margin: 50px auto 0;
+            }
+          }
+        }
+        .preamble {
+          grid-row: 1;
+            grid-column: 2/5;
+            margin-top: 0;
+           
+           
+            
+          
+        }
+    header
+    {
+      height: 260px;
+      background-image: url(images/heade.jpg);
+      margin: 0em;
+      border-radius: 7px;
+      width: 99%;
+     
+     
+    
+          h2, h1 {
+            font-family: $pincipalfont;
+          }
+    
+          h2{
+            font-size: 50px;
+            margin-left: 1.5em;
+          }
+          h1{
+            margin-left: 2em;
+            margin-top: 1.2em;
+            font-size: 46px;
+          }
+    
     
     }
     
+    }
+
+
+    }
     
     
     /* -----------------------------------------------Large ------------------------------------------------------------- */
@@ -418,7 +487,7 @@
     }
     
     
-        
+    
     
     
     
