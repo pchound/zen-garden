@@ -319,7 +319,7 @@ main h2 {
       .sidebar nav li a {
         color: inherit; }
       .sidebar nav li a {
-        background: linear-gradient(to right, #f5a6bd49, #f5a6bd49), linear-gradient(to right, #ddc0c8, #ddc0c8, #ddc0c8);
+        background: linear-gradient(to right, #f5a6bd49, #f5a6bd49), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
         background-size: 100% 3px, 0 3px;
         background-position: 100% 100%, 0 100%;
         background-repeat: no-repeat;
@@ -349,7 +349,7 @@ main h2 {
       .sidebar .zen-resources li a {
         color: inherit; }
       .sidebar .zen-resources li a {
-        background: linear-gradient(to right, #f5a6bd49, #f5a6bd49), linear-gradient(to right, #ddc0c8, #ddc0c8, #ddc0c8);
+        background: linear-gradient(to right, #f5a6bd49, #f5a6bd49), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
         background-size: 100% 3px, 0 3px;
         background-position: 100% 100%, 0 100%;
         background-repeat: no-repeat;
@@ -378,7 +378,7 @@ main h2 {
   body {
     font-family: "Philosopher", sans-serif;
     color: #060606;
-    background-color: #ddc0c8;
+    background-color: #ffaec537;
     margin: 0; }
 
   .page-wrapper {
