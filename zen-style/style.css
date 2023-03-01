@@ -277,7 +277,8 @@ main h2 {
     margin: 1em;
     border-radius: 7px;
     width: 99%; }
-    .intro header h2, .intro header h1 {
+    .intro header h2,
+    .intro header h1 {
       font-family: "Aokahori"; }
     .intro header h2 {
       font-size: 30px;
@@ -387,7 +388,8 @@ main h2 {
     margin: 0em;
     border-radius: 7px;
     width: 99%; }
-    .intro header h2, .intro header h1 {
+    .intro header h2,
+    .intro header h1 {
       font-family: "Aokahori"; }
     .intro header h2 {
       font-size: 50px;
@@ -435,7 +437,8 @@ main h2 {
         grid-column: 1/5;
         z-index: 1;
         margin: 1em; }
-        .page-wrapper .intro header h2, .page-wrapper .intro header h1 {
+        .page-wrapper .intro header h2,
+        .page-wrapper .intro header h1 {
           font-family: "Aokahori"; }
         .page-wrapper .intro header h2 {
           font-size: 70px;
@@ -475,14 +478,34 @@ main h2 {
       grid-row: 1;
       grid-column: 2/5;
       margin-top: 48em;
-      margin-left: 1.5em; } }
-.sidebar {
-  grid-row: 1;
-  grid-column: 1/2;
-  margin-top: 27em; }
-  .sidebar nav ul li {
-    font-size: x-large;
-    margin: 20px;
-    border-radius: 5px; }
+      margin-left: 1.5em; }
+      .page-wrapper #zen-supporting footer {
+        text-align: center;
+        grid-column: 1/5;
+        margin-top: 1em; }
+        .page-wrapper #zen-supporting footer .zen-validate-html:hover,
+        .page-wrapper #zen-supporting footer .zen-validate-css:hover,
+        .page-wrapper #zen-supporting footer .zen-license:hover,
+        .page-wrapper #zen-supporting footer .zen-accessibility:hover,
+        .page-wrapper #zen-supporting footer .zen-github:hover {
+          color: #6f8b8be5;
+          font-size: 50px;
+          transition: font-size 2s;
+          margin: 50px auto 0;
+          animation-name: grw, grw2;
+          animation-duration: .8s;
+          animation-direction: alternate-reverse; }
+        .page-wrapper #zen-supporting footer a {
+          margin: 3em;
+          font-size: 20px; }
+
+  .sidebar {
+    grid-row: 1;
+    grid-column: 1/2;
+    margin-top: 27em; }
+    .sidebar nav ul li {
+      font-size: x-large;
+      margin: 20px;
+      border-radius: 5px; } }
 
 /*# sourceMappingURL=style.css.map */
