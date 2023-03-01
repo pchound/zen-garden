@@ -338,10 +338,12 @@
   @keyframes grw2 {
     from {
       opacity: .5;
+      
     }
 
     to {
       opacity: 1;
+      color: $sideanimacolor;
     }
   }
 
@@ -405,20 +407,15 @@
         }
 
         h2 {
-          :hover {
-            color: rgb(255, 208, 216);
-            font-size: 140px;
-
-            transition: font-size 2s;
-            margin: 50px auto 0;
+          abbr {
+            
 
             animation-name: grw, grw2;
-            animation-duration: .8s;
+         
+            animation: grw, grw2 3s infinite;
+            
 
-            animation-direction: alternate-reverse;
-
-            height: 100px;
-            width: 100px;
+          
 
 
 
@@ -490,7 +487,7 @@
         color: $footer-color;
         font-size: 50px;
 
-        transition: font-size 2s;
+        transition: font-size 1s;
         margin: 50px auto 0;
 
         animation-name: grw, grw2;
@@ -507,7 +504,7 @@
       a {
         margin: 3em;
         font-size: 20px;
-
+ 
 
 
       }
