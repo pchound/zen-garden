@@ -296,7 +296,7 @@ main h2 {
     margin-top: 1em; }
     .sidebar h3 {
       font-family: "Croissant One", cursive;
-      font-size: x-large;
+      font-size: large;
       text-align: center; }
     .sidebar nav ul {
       list-style: none; }
@@ -307,27 +307,18 @@ main h2 {
         background: #ff9cb9;
         transition: width 1s, height 1s, margin 1s;
         margin: 50px auto 0;
-        font-size: 1.2em;
+        font-size: 1em;
         font-family: "Croissant One", cursive;
         background-image: url(images/image.jpg); }
     .sidebar nav li {
       background-color: #f5a6bd49;
       margin: 20px;
-      font-size: larger;
+      font-size: large;
       font-family: "Philosopher", sans-serif;
       border: 1px #FA9BB7;
       list-style-position: unset; }
       .sidebar nav li a {
         color: inherit; }
-      .sidebar nav li a {
-        background: linear-gradient(to right, #f5a6bd49, #f5a6bd49), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
-        background-size: 100% 3px, 0 3px;
-        background-position: 100% 100%, 0 100%;
-        background-repeat: no-repeat;
-        transition: background-size 400ms; }
-      .sidebar nav li a:hover {
-        background-size: 0 3px, 100% 3px;
-        color: #222020; }
     .sidebar .zen-resources ul {
       list-style: none; }
       .sidebar .zen-resources ul :hover {

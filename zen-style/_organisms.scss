@@ -99,7 +99,7 @@
 
     h3 {
       font-family: $fonts-headline;
-      font-size: x-large;
+      font-size: large;
       text-align: center;
     }
 
@@ -115,7 +115,7 @@
           background: $sideanimacolor;
           transition: width 1s, height 1s, margin 1s;
           margin: 50px auto 0;
-          font-size: 1.2em;
+          font-size: 1em;
           font-family: $fonts-headline;
           background-image: url(images/image.jpg);
 
@@ -128,7 +128,7 @@
       li {
         background-color: $asidecolor;
         margin: 20px;
-        font-size: larger;
+        font-size: large;
         font-family: $fonts-body;
         border: 1px $grey-sidebar ;
 
@@ -140,25 +140,9 @@
 
         }
 
-        a {
-          background:
-            linear-gradient(to right,
-              $asidecolor,
-              $asidecolor ),
-            linear-gradient(to right,
-              $lcolor,
-              $lcolor,
-              $lcolor );
-          background-size: 100% 3px, 0 3px;
-          background-position: 100% 100%, 0 100%;
-          background-repeat: no-repeat;
-          transition: background-size 400ms;
-        }
+        
 
-        a:hover {
-          background-size: 0 3px, 100% 3px;
-          color: #222020;
-        }
+       
 
 
 
