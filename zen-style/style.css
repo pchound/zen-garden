@@ -245,6 +245,17 @@ main h2 {
   font-family: "Aokahori"; }
 
 @media only screen and (min-width: 2rem) {
+  @keyframes grw2 {
+    from {
+      opacity: 1;
+      color: #ff9cb9; }
+    to {
+      opacity: .5; }
+    from {
+      opacity: .5; }
+    to {
+      opacity: 1;
+      color: #ff9cb9; } }
   html {
     background-color: #ffffff; }
 
@@ -272,21 +283,28 @@ main h2 {
     grid-column: 2/5;
     margin-top: 0; }
   .intro header {
-    height: 260px;
+    width: 98%;
+    height: 200px;
     background-image: url(images/heade.jpg);
-    margin: 1em;
-    border-radius: 7px;
-    width: 99%; }
+    border-radius: 5px;
+    grid-row: 1;
+    grid-column: 1/5;
+    z-index: 1;
+    margin: auto; }
     .intro header h2,
     .intro header h1 {
       font-family: "Aokahori"; }
     .intro header h2 {
       font-size: 30px;
-      margin-left: 1em; }
+      text-align: center; }
     .intro header h1 {
-      margin-left: .3em;
+      margin-left: 1em;
       margin-top: 1.2em;
-      font-size: 40px; }
+      font-size: 35px; }
+    .intro header h2 abbr {
+      font-size: 35px;
+      animation-name: grw, grw2;
+      animation: grw, grw2 3.5s infinite; }
 
   .sidebar {
     grid-row: 2;
@@ -351,6 +369,17 @@ main h2 {
         color: #222020; } }
 /* -------------------------------------------------------Medium  --------------------------------------------------------------*/
 @media only screen and (min-width: 35rem) {
+  @keyframes grw2 {
+    from {
+      opacity: 1;
+      color: #ff9cb9; }
+    to {
+      opacity: .5; }
+    from {
+      opacity: .5; }
+    to {
+      opacity: 1;
+      color: #ff9cb9; } }
   body {
     font-family: "Philosopher", sans-serif;
     color: #060606;
@@ -374,21 +403,28 @@ main h2 {
     grid-column: 2/5;
     margin-top: 0; }
   .intro header {
-    height: 260px;
+    width: 98%;
+    height: 250px;
     background-image: url(images/heade.jpg);
-    margin: 0em;
-    border-radius: 7px;
-    width: 99%; }
+    border-radius: 5px;
+    grid-row: 1;
+    grid-column: 1/5;
+    z-index: 1;
+    margin: auto; }
     .intro header h2,
     .intro header h1 {
       font-family: "Aokahori"; }
     .intro header h2 {
-      font-size: 50px;
-      margin-left: 1.5em; }
+      font-size: 40px;
+      margin-left: 4em; }
     .intro header h1 {
-      margin-left: 2em;
+      margin-left: 1em;
       margin-top: 1.2em;
-      font-size: 46px; } }
+      font-size: 40px; }
+    .intro header h2 abbr {
+      font-size: 50px;
+      animation-name: grw2;
+      animation: grw2 3.5s infinite; } }
 /* -----------------------------------------------Large ------------------------------------------------------------- */
 @media only screen and (min-width: 64rem) {
   @keyframes grw {
@@ -426,6 +462,7 @@ main h2 {
         height: 400px;
         border-radius: 5px;
         grid-row: 1;
+        background-image: url(images/heade.jpg);
         grid-column: 1/5;
         z-index: 1;
         margin: 1em; }

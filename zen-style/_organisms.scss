@@ -6,6 +6,28 @@
 
 @media only screen and (min-width: 2rem) {
 
+  @keyframes grw2 {
+    
+    from {
+      opacity: 1;
+      color: $sideanimacolor;
+    }
+
+    to {
+      opacity: .5;
+    }
+
+    from {
+      opacity: .5;
+      
+    }
+
+    to {
+      opacity: 1;
+      color: $sideanimacolor;
+    }
+
+  }
 
 
 
@@ -57,13 +79,14 @@
     }
 
     header {
-      height: 260px;
+      width: 98%;
+      height: 200px;
       background-image: url(images/heade.jpg);
-      margin: 1em;
-      border-radius: 7px;
-      width: 99%;
-
-
+      border-radius: 5px;
+      grid-row: 1;
+      grid-column: 1/5;
+      z-index: 1;
+      margin: auto;
 
       h2,
       h1 {
@@ -72,16 +95,26 @@
 
       h2 {
         font-size: 30px;
-        margin-left: 1em;
+       text-align: center;
       }
 
       h1 {
-        margin-left: .3em;
+        margin-left: 1em;
         margin-top: 1.2em;
-        font-size: 40px;
+        font-size: 35px;
       }
 
+      h2 {
+        abbr {
+          
+        font-size: 35px;
+          animation-name: grw, grw2;
+       
+          animation: grw, grw2 3.5s infinite;
+          
 
+        }
+      }
     }
 
 
@@ -222,6 +255,28 @@
 @media only screen and (min-width: 35rem) {
 
 
+  @keyframes grw2 {
+    
+    from {
+      opacity: 1;
+      color: $sideanimacolor;
+    }
+
+    to {
+      opacity: .5;
+    }
+
+    from {
+      opacity: .5;
+      
+    }
+
+    to {
+      opacity: 1;
+      color: $sideanimacolor;
+    }
+
+  }
 
 
 
@@ -269,13 +324,14 @@
     }
 
     header {
-      height: 260px;
+      width: 98%;
+      height: 250px;
       background-image: url(images/heade.jpg);
-      margin: 0em;
-      border-radius: 7px;
-      width: 99%;
-
-
+      border-radius: 5px;
+      grid-row: 1;
+      grid-column: 1/5;
+      z-index: 1;
+      margin: auto;
 
       h2,
       h1 {
@@ -283,17 +339,27 @@
       }
 
       h2 {
-        font-size: 50px;
-        margin-left: 1.5em;
+        font-size: 40px;
+        margin-left: 4em;
       }
 
       h1 {
-        margin-left: 2em;
+        margin-left: 1em;
         margin-top: 1.2em;
-        font-size: 46px;
+        font-size: 40px;
       }
 
+      h2 {
+        abbr {
+          
+        font-size: 50px;
+          animation-name:  grw2;
+       
+          animation:  grw2 3.5s infinite;
+          
 
+        }
+      }
     }
 
   }
@@ -370,6 +436,7 @@
         height: 400px;
         border-radius: 5px;
         grid-row: 1;
+        background-image: url(images/heade.jpg);
         grid-column: 1/5;
         z-index: 1;
         margin: 1em;
