@@ -1,582 +1,66 @@
-@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
-h2 {
-  margin: 0; }
-
-h3,
-h4 {
-  margin: 0; }
-
-h1 {
-  font-size: 6em;
-  color: #fff;
-  display: inline-block;
-  font-weight: normal; }
-
-h2 {
-  color: #fff;
-  font-weight: 900;
-  /* Heavy */
-  letter-spacing: 1px;
-  line-height: 1em; }
-
-h3 {
-  font-size: 2.25em;
-  font-weight: 200;
-  /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  padding: 0.5em 0 0.25em 0; }
-
-h4 {
-  font-size: 1.5em;
-  font-weight: 200;
-  /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  margin: 0.5em 0; }
-
-p {
-  padding: 0.5em 0;
-  margin: 0; }
-
-a {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #060606;
-  text-decoration: none;
-  transition: border-color 0.2s ease-in-out; }
-
-a:hover {
-  border-color: #669190; }
-
-h2 {
-  margin: 0; }
-
-h3,
-h4 {
-  margin: 0; }
-
-h1 {
-  font-size: 6em;
-  color: #fff;
-  display: inline-block;
-  font-weight: normal; }
-
-h2 {
-  color: #fff;
-  font-weight: 900;
-  /* Heavy */
-  letter-spacing: 1px;
-  line-height: 1em; }
-
-h3 {
-  font-size: 2.25em;
-  font-weight: 200;
-  /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  padding: 0.5em 0 0.25em 0; }
-
-h4 {
-  font-size: 1.5em;
-  font-weight: 200;
-  /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  margin: 0.5em 0; }
-
-p {
-  padding: 0.5em 0;
-  margin: 0; }
-
-a {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #060606;
-  text-decoration: none;
-  transition: border-color 0.2s ease-in-out; }
-
-a:hover {
-  border-color: #669190; }
-
-.summary {
-  font-size: larger;
-  margin-left: .8em;
-  background-image: url(images/back2.jpg);
-  text-shadow: #000 .4px .4px; }
-  .summary a {
-    color: #669190; }
-    .summary a :hover {
-      color: #ffd0d8;
-      font-size: 140px;
-      transition: font-size 2s;
-      margin: 50px auto 0; }
-
-.preamble {
-  color: #060606;
-  text-shadow: #000 .4px .4px;
-  background-image: url(images/back2.jpg);
-  margin-left: 1em; }
-
-main h2 {
-  font-family: "Aokahori"; }
-
-h2 {
-  margin: 0; }
-
-h3,
-h4 {
-  margin: 0; }
-
-h1 {
-  font-size: 6em;
-  color: #fff;
-  display: inline-block;
-  font-weight: normal; }
-
-h2 {
-  color: #fff;
-  font-weight: 900;
-  /* Heavy */
-  letter-spacing: 1px;
-  line-height: 1em; }
-
-h3 {
-  font-size: 2.25em;
-  font-weight: 200;
-  /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  padding: 0.5em 0 0.25em 0; }
-
-h4 {
-  font-size: 1.5em;
-  font-weight: 200;
-  /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  margin: 0.5em 0; }
-
-p {
-  padding: 0.5em 0;
-  margin: 0; }
-
-a {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #060606;
-  text-decoration: none;
-  transition: border-color 0.2s ease-in-out; }
-
-a:hover {
-  border-color: #669190; }
-
-h2 {
-  margin: 0; }
-
-h3,
-h4 {
-  margin: 0; }
-
-h1 {
-  font-size: 6em;
-  color: #fff;
-  display: inline-block;
-  font-weight: normal; }
-
-h2 {
-  color: #fff;
-  font-weight: 900;
-  /* Heavy */
-  letter-spacing: 1px;
-  line-height: 1em; }
-
-h3 {
-  font-size: 2.25em;
-  font-weight: 200;
-  /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  padding: 0.5em 0 0.25em 0; }
-
-h4 {
-  font-size: 1.5em;
-  font-weight: 200;
-  /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  margin: 0.5em 0; }
-
-p {
-  padding: 0.5em 0;
-  margin: 0; }
-
-a {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #060606;
-  text-decoration: none;
-  transition: border-color 0.2s ease-in-out; }
-
-a:hover {
-  border-color: #669190; }
-
-.summary {
-  font-size: larger;
-  margin-left: .8em;
-  background-image: url(images/back2.jpg);
-  text-shadow: #000 .4px .4px; }
-  .summary a {
-    color: #669190; }
-    .summary a :hover {
-      color: #ffd0d8;
-      font-size: 140px;
-      transition: font-size 2s;
-      margin: 50px auto 0; }
-
-.preamble {
-  color: #060606;
-  text-shadow: #000 .4px .4px;
-  background-image: url(images/back2.jpg);
-  margin-left: 1em; }
-
-main h2 {
-  font-family: "Aokahori"; }
-
-@media only screen and (min-width: 2rem) {
-  html {
-    background-color: #ffffff; }
-
-  body {
-    font-family: "Philosopher", sans-serif;
-    color: #060606;
-    background-color: #d6d4d4;
-    margin: 0;
-    padding: 1em; }
-
-  .page-wrapper {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr; }
-
-  .intro .summary {
-    margin-top: 1em;
-    height: 110px; }
-    .intro .summary a {
-      color: #669190; }
-      .intro .summary a :hover {
-        color: #ffd0d8;
-        font-size: 140px;
-        transition: font-size 2s;
-        margin: 50px auto 0; }
-  .intro .preamble {
-    margin-top: 0; }
-  .intro header {
-    height: 260px;
-    background-image: url(images/heade.jpg);
-    margin: 1em;
-    border-radius: 7px;
-    width: 99%; }
-    .intro header h2, .intro header h1 {
-      font-family: "Aokahori"; }
-    .intro header h2 {
-      font-size: 30px;
-      margin-left: 1em; }
-    .intro header h1 {
-      margin-left: .3em;
-      margin-top: 1.2em;
-      font-size: 40px; }
-
-  body > div > aside {
-    grid-row: 2; }
-
-  #zen-summary {
-    grid-row: 3; }
-
-  .sidebar {
-    border: 2px solid #fff;
-    border-radius: 10px;
-    background-image: url(images/image1.jpg);
-    margin-top: 1em; }
-    .sidebar h3 {
-      font-family: "Croissant One", cursive;
-      font-size: x-large;
-      text-align: center; }
-    .sidebar nav ul {
-      list-style: none; }
-      .sidebar nav ul :hover {
-        width: 200px;
-        height: 100px;
-        border-radius: 10px;
-        background: #ff9cb9;
-        transition: width 1s, height 1s, margin 1s;
-        margin: 50px auto 0;
-        font-size: 1.2em;
-        font-family: "Croissant One", cursive;
-        background-image: url(images/image.jpg); }
-    .sidebar nav li {
-      background-color: #f5a6bd49;
-      margin: 20px;
-      font-size: larger;
-      font-family: "Philosopher", sans-serif;
-      border: 1px #FA9BB7;
-      list-style-position: unset; }
-      .sidebar nav li a {
-        color: inherit; }
-      .sidebar nav li a {
-        background: linear-gradient(to right, #f5a6bd49, #f5a6bd49), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
-        background-size: 100% 3px, 0 3px;
-        background-position: 100% 100%, 0 100%;
-        background-repeat: no-repeat;
-        transition: background-size 400ms; }
-      .sidebar nav li a:hover {
-        background-size: 0 3px, 100% 3px;
-        color: #222020; } }
-/* -------------------------------------------------------Medium  --------------------------------------------------------------*/
-    /*@media only screen and (min-width: 35rem) {
-    
-
-
-
-      
-      body {
-        font-family: $fonts-body;
-      
-        color: $text-dark;
-        background-color: $lcolor;
-        margin: 0;
-        
-
-
-      }
-    
-       
-    .intro{
-      .summary {
-       margin-top: 1em;
-        grid-row: 1;
-        grid-column: 2/5;
-        height: 110px;
-        
-        
-          a {
-            color: $accent1; 
-            :hover{
-              color: rgb(255, 208, 216);
-            font-size: 140px;
-                
-                transition: font-size 2s;
-                margin: 50px auto 0;
-            }
-          }
-        }
-        .preamble {
-          grid-row: 1;
-            grid-column: 2/5;
-            margin-top: 0;
-           
-           
-            
-          
-        }
-    header
-    {
-      height: 260px;
-      background-image: url(images/heade.jpg);
-      margin: 0em;
-      border-radius: 7px;
-      width: 99%;
-     
-     
-    
-          h2, h1 {
-            font-family: $pincipalfont;
-          }
-    
-          h2{
-            font-size: 50px;
-            margin-left: 1.5em;
-          }
-          h1{
-            margin-left: 2em;
-            margin-top: 1.2em;
-            font-size: 46px;
-          }
-    
-    
-    }
-    
-    }
-
-
-    }*/
-/* -----------------------------------------------Large ------------------------------------------------------------- */
-   /* @media only screen and (min-width: 64rem) {
-    
-      @keyframes grw {
-        from {
-            transform: scale(0.5);
-            opacity: .8;
-        }
-        to {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes grw2 {
-        from {
-            opacity: .5;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-
-
-
-
-      html {
-        background-color: $background-color;
-        
-      
-      }
-      
-      body {
-        font-family: $fonts-body;
-      
-        color: $text-dark;
-        background-color: $lcolor;
-        margin: 0;
-        
-      }
-    
-    .page-wrapper{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    
-      
-
-
-    .intro{
-      grid-column: 1/5;
-      grid-row: 1;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      
-    
-      
-      header{
-        width: 98%;
-        height: 400px;
-        border-radius: 5px;
-        grid-row: 1;
-        grid-column:1/5 ;
-        z-index: 1;
-        margin: 1em;
-    
-        h2, h1 {
-          font-family: $pincipalfont;
-        }
-    
-        h2{
-          font-size: 70px;
-          margin-left: 6em;
-        }
-        h1{
-          margin-left: 1em;
-          margin-top: 1.2em;
-          font-size: 80px;
-        }
-    
-        h2{
-          :hover{
-            color: rgb(255, 208, 216);
-          font-size: 140px;
-          
-              transition: font-size 2s;
-              margin: 50px auto 0;
-
-              animation-name: grw, grw2;
-              animation-duration: .8s; 
-              
-              animation-direction: alternate-reverse;
-              
-              height: 100px;
-              width: 100px;
-
-
-
-
-          }
-        }
-      }
-    
-    
-     
-    
-      }
-      .summary {
-        margin-top: 23em;
-       grid-row: 1;
-       grid-column: 2/5;
-       height: 300px;
-      
-       
-         a {
-           color: $accent1; 
-           :hover{
-             color: rgb(255, 208, 216);
-           font-size: 140px;
-               
-               transition: font-size 2s;
-               margin: 50px auto 0;
-           }
-         }
-       }
-       .preamble {
-         grid-row: 1/2;
-           grid-column: 2/5;
-           margin-top: 34em;
-           height: 225px;
-           
-       
-         
-       }
-       
-       #zen-supporting{
-        grid-row: 1;
-     grid-column: 2/5;
-     margin-top: 48em;
-     margin-left: 1.5em;
-      
-          }
-    }
-    
-    }
-    
-    .sidebar{
-      grid-row: 1;
-      grid-column: 1/2;
-      margin-top: 27em;
-     
-    
-     nav{
-      ul{
-        li{
-          font-size: x-large ;
-          margin: 20px;
-          border-radius: 5px;
-        }
-      }
-
-      
-     }
-    
-
-
-
-    }*/
-
-/*# sourceMappingURL=style.css.map */
+/*
+Error: Invalid CSS after "    }": expected "}", was ""
+        on line 604 of _organisms.scss
+        from line 4 of style.scss
+
+Backtrace:
+_organisms.scss:604
+style.scss:4
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:690:in `block'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:421:in `media_directive'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    }\": expected \"}\", was \"\"\A         on line 604 of _organisms.scss\A         from line 4 of style.scss"; }
