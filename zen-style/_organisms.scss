@@ -12,25 +12,27 @@
 
     html {
       background-color: $background-color;
-      
-    
     }
     
     body {
       font-family: $fonts-body;
-    
       color: $text-dark;
       background-color: $primary;
       margin: 0;
       padding: 1em;
     }
     
+    .page-wrapper
+    {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
     
     .intro{
+      
       .summary {
-       margin-top: 1em;
-        grid-row: 1;
-        grid-column: 2/5;
+        
+        margin-top: 1em;
         height: 110px;
         
         
@@ -46,8 +48,7 @@
           }
         }
         .preamble {
-          grid-row: 1;
-            grid-column: 2/5;
+          
             margin-top: 0;
            
            
@@ -61,13 +62,10 @@
       margin: 1em;
       border-radius: 7px;
       width: 99%;
-     
-     
-    
+      
           h2, h1 {
             font-family: $pincipalfont;
           }
-    
           h2{
             font-size: 30px;
             margin-left: 1em;
@@ -77,166 +75,108 @@
             margin-top: 1.2em;
             font-size: 40px;
           }
-    
-    
     }
-    
-    
     }
+
     
-    .sidebar {
-    
+ 
+    body > div > aside
+    {
       grid-row: 2;
-    
-    
+    }
+    #zen-summary
+    {
+      grid-row: 3;
+    }
+    .sidebar {
+      
     border: 2px solid #fff;
     border-radius: 10px;
     background-image: url(images/image1.jpg) ;
     margin-top: 1em;
     
-    h3{
-      font-family: $fonts-headline;
-      font-size: x-large;
-      text-align: center;
-    }
-    nav{
-    
-    ul{
-    list-style:none ;
-      :hover{
-        width: 200px;
-        height: 100px;
-        border-radius: 10px;
-        background: $sideanimacolor;
-        transition: width 1s, height 1s, margin 1s;
-        margin: 50px auto 0;
-        font-size: 1.2em;
-        font-family: $fonts-headline;
-        background-image: url(images/image.jpg) ;
-    
-    
-    
-       }
+        h3{
+          font-family: $fonts-headline;
+          font-size: x-large;
+          text-align: center;
+        }
+        nav{
         
-    }
-    
-    li{
-      background-color:$asidecolor;
-      margin: 20px;
-      font-size: larger;
-      font-family: $fonts-body;
-      border: 1px $grey-sidebar ;
-    
-      list-style-position:unset;
-     
-    
-      a {
-        color: inherit;
-       
-      }
-      
-      a {
-        background:
-          linear-gradient(
-            to right,
-            $asidecolor,
-            $asidecolor
-          ),
-          linear-gradient(
-            to right,
-            $lcolor,
-            $lcolor,
-            $lcolor
-        );
-        background-size: 100% 3px, 0 3px;
-        background-position: 100% 100%, 0 100%;
-        background-repeat: no-repeat;
-        transition: background-size 400ms;
-      }
-      
-      a:hover {
-        background-size: 0 3px, 100% 3px;
-        color: #222020;
-      }
-      
-    
-       
-      }
-    
-    }
-    
-      
-    .zen-resources{
-      ul{
+        ul{
         list-style:none ;
-            :hover{
-              width: 200px;
-              height: 100px;
-              border-radius: 10px;
-              background: $sideanimacolor;
-              transition: width 2s, height 2s, margin 2s;
-              margin: 50px auto 0;
-              font-size: 1.2em;
-              font-family: $fonts-headline;
-              background-image: url(images/image.jpg) ;
+          :hover{
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            background: $sideanimacolor;
+            transition: width 1s, height 1s, margin 1s;
+            margin: 50px auto 0;
+            font-size: 1.2em;
+            font-family: $fonts-headline;
+            background-image: url(images/image.jpg) ;
         
         
         
-             }
-              
           }
-          li{
-            background-color:$asidecolor;
-            margin: 20px;
-            font-size: x-large;
-            font-family: $fonts-body;
-            border: 1px $grey-sidebar ;
+            
+        }
         
-            list-style-position:unset;
-           
+        li{
+          background-color:$asidecolor;
+          margin: 20px;
+          font-size: larger;
+          font-family: $fonts-body;
+          border: 1px $grey-sidebar ;
         
-            a {
-              color: inherit;
-             
-            }
-            
-            a {
-              background:
-                linear-gradient(
-                  to right,
-                  $asidecolor,
-                  $asidecolor
-                ),
-                linear-gradient(
-                  to right,
-                  $lcolor,
-                  $lcolor,
-                  $lcolor
-              );
-              background-size: 100% 3px, 0 3px;
-              background-position: 100% 100%, 0 100%;
-              background-repeat: no-repeat;
-              transition: background-size 400ms;
-            }
-            
-            a:hover {
-              background-size: 0 3px, 100% 3px;
-              color: #222020;
-            }
-            
-         
-             
-            }
-         
+          list-style-position:unset;
+        
+        
+          a {
+            color: inherit;
+          
+          }
+          
+          a {
+            background:
+              linear-gradient(
+                to right,
+                $asidecolor,
+                $asidecolor
+              ),
+              linear-gradient(
+                to right,
+                $lcolor,
+                $lcolor,
+                $lcolor
+            );
+            background-size: 100% 3px, 0 3px;
+            background-position: 100% 100%, 0 100%;
+            background-repeat: no-repeat;
+            transition: background-size 400ms;
+          }
+          
+          a:hover {
+            background-size: 0 3px, 100% 3px;
+            color: #222020;
           }
           
         
+          
+          }
+        
         }
-      }
+    }
+    #zen-summary,#zen-preamble{
+      
+    
+    }
+  }
+
+
     
       /* -------------------------------------------------------Medium  --------------------------------------------------------------*/
     
-    @media only screen and (min-width: 35rem) {
+    /*@media only screen and (min-width: 35rem) {
     
 
 
@@ -312,13 +252,13 @@
     }
 
 
-    }
+    }*/
     
     
     /* -----------------------------------------------Large ------------------------------------------------------------- */
     
     
-    @media only screen and (min-width: 64rem) {
+   /* @media only screen and (min-width: 64rem) {
     
       @keyframes grw {
         from {
@@ -484,7 +424,7 @@
 
 
 
-    }
+    }*/
     
     
     
