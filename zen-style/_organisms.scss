@@ -29,12 +29,31 @@
 
   }
 
+  .page-wrapper
+  {
+    display: grid;
+    /*grid-template-rows: auto auto auto auto;*/
+  }
+header
+{
+  grid-row: 1;
+}
+.sidebar
+{
+  grid-row: 2;
+}
+#zen-preamble
+{
+  grid-row: 3;
+}
+#zen-supporting
+{
+  grid-row: 4;
+}
 
 
     html {
       background-color: $background-color;
-      
-    
     }
     
     body {
@@ -50,8 +69,7 @@
     .intro{
       .summary {
        margin-top: 1em;
-        grid-row: 1;
-        grid-column: 2/5;
+        
         height: 110px;
         
         
@@ -68,21 +86,16 @@
         }
         .preamble {
           grid-row: 1;
-            grid-column: 2/5;
-            margin-top: 0;
-           
-           
-            
-          
+          margin-top: 0;
+
         }
     header
     {
       height: 260px;
-      background-image: url(images/heade.jpg);
+      background-image: url(images/heade.png);
       margin: 1em;
       border-radius: 7px;
-      width: 99%;
-     
+      width: 97%;
      
     
           h2, h1 {
@@ -98,17 +111,12 @@
             margin-top: 1.2em;
             font-size: 40px;
           }
-    
-    
     }
     
     
     }
     
     .sidebar {
-    
-      grid-row: 2;
-    
     
     border: 2px solid #fff;
     border-radius: 10px;
@@ -134,11 +142,7 @@
         font-size: 1.2em;
         font-family: $fonts-headline;
         background-image: url(images/image.jpg) ;
-    
-    
-    
-       }
-        
+       }      
     }
     
     li{
@@ -179,11 +183,7 @@
         background-size: 0 3px, 100% 3px;
         color: #222020;
       }
-      
-    
-       
       }
-    
     }
     
       
@@ -200,9 +200,6 @@
               font-size: 1.2em;
               font-family: $fonts-headline;
               background-image: url(images/image.jpg) ;
-        
-        
-        
              }
               
           }
@@ -244,14 +241,8 @@
               background-size: 0 3px, 100% 3px;
               color: #222020;
             }
-            
-         
-             
             }
-         
           }
-          
-        
         }
       }
     
@@ -471,9 +462,6 @@
         }
       }
 
-
-
-
     }
 
     .summary {
@@ -541,33 +529,18 @@
         animation-duration: .8s;
 
         animation-direction: alternate-reverse;
-
-
-
-
       }
 
 
       a {
         margin: 3em;
         font-size: 20px;
- 
-
-
       }
-
-
-
-
 
     }
 
 
   }
-
-
-
-
 }
 
 .sidebar {
@@ -590,14 +563,4 @@
 
 
 
-    }*/
-    
-    
-    
-    
-    
-    
-    
-
-
-
+    }}*/

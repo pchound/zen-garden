@@ -256,6 +256,22 @@ main h2 {
     to {
       opacity: 1;
       color: #ff9cb9; } }
+  .page-wrapper {
+    display: grid;
+    /*grid-template-rows: auto auto auto auto;*/ }
+
+  header {
+    grid-row: 1; }
+
+  .sidebar {
+    grid-row: 2; }
+
+  #zen-preamble {
+    grid-row: 3; }
+
+  #zen-supporting {
+    grid-row: 4; }
+
   html {
     background-color: #ffffff; }
 
@@ -268,8 +284,6 @@ main h2 {
 
   .intro .summary {
     margin-top: 1em;
-    grid-row: 1;
-    grid-column: 2/5;
     height: 110px; }
     .intro .summary a {
       color: #669190; }
@@ -280,14 +294,13 @@ main h2 {
         margin: 50px auto 0; }
   .intro .preamble {
     grid-row: 1;
-    grid-column: 2/5;
     margin-top: 0; }
   .intro header {
     height: 260px;
-    background-image: url(images/heade.jpg);
+    background-image: url(images/heade.png);
     margin: 1em;
     border-radius: 7px;
-    width: 99%; }
+    width: 97%; }
     .intro header h2, .intro header h1 {
       font-family: "Aokahori"; }
     .intro header h2 {
@@ -299,7 +312,6 @@ main h2 {
       font-size: 40px; }
 
   .sidebar {
-    grid-row: 2;
     border: 2px solid #fff;
     border-radius: 10px;
     background-image: url(images/image1.jpg);
@@ -580,9 +592,6 @@ main h2 {
         }
       }
 
-
-
-
     }
 
     .summary {
@@ -650,33 +659,18 @@ main h2 {
         animation-duration: .8s;
 
         animation-direction: alternate-reverse;
-
-
-
-
       }
 
 
       a {
         margin: 3em;
         font-size: 20px;
- 
-
-
       }
-
-
-
-
 
     }
 
 
   }
-
-
-
-
 }
 
 .sidebar {
@@ -699,6 +693,6 @@ main h2 {
 
 
 
-    }*/
+    }}*/
 
 /*# sourceMappingURL=style.css.map */
