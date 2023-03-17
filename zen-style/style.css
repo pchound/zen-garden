@@ -51,7 +51,7 @@ a {
   transition: border-color 0.2s ease-in-out; }
 
 a:hover {
-  border-color: #669190; }
+  border-color: #8acdcb; }
 
 h2 {
   margin: 0; }
@@ -100,15 +100,18 @@ a {
   transition: border-color 0.2s ease-in-out; }
 
 a:hover {
-  border-color: #669190; }
+  border-color: #8acdcb; }
+
+body {
+  background-image: url(images/ornament.png); }
 
 .summary {
   font-size: larger;
   margin-left: .8em;
-  background-image: url(images/back2.jpg);
+  color: white;
   text-shadow: #000 .4px .4px; }
   .summary a {
-    color: #669190; }
+    color: #8acdcb; }
     .summary a :hover {
       color: #ffd0d8;
       font-size: 140px;
@@ -118,8 +121,8 @@ a:hover {
 .preamble {
   color: #060606;
   text-shadow: #000 .4px .4px;
-  background-image: url(images/back2.jpg);
-  margin-left: 1em; }
+  margin-left: 1em;
+  color: white; }
 
 main h2 {
   font-family: "Aokahori"; }
@@ -171,7 +174,7 @@ a {
   transition: border-color 0.2s ease-in-out; }
 
 a:hover {
-  border-color: #669190; }
+  border-color: #8acdcb; }
 
 h2 {
   margin: 0; }
@@ -220,15 +223,18 @@ a {
   transition: border-color 0.2s ease-in-out; }
 
 a:hover {
-  border-color: #669190; }
+  border-color: #8acdcb; }
+
+body {
+  background-image: url(images/ornament.png); }
 
 .summary {
   font-size: larger;
   margin-left: .8em;
-  background-image: url(images/back2.jpg);
+  color: white;
   text-shadow: #000 .4px .4px; }
   .summary a {
-    color: #669190; }
+    color: #8acdcb; }
     .summary a :hover {
       color: #ffd0d8;
       font-size: 140px;
@@ -238,8 +244,8 @@ a:hover {
 .preamble {
   color: #060606;
   text-shadow: #000 .4px .4px;
-  background-image: url(images/back2.jpg);
-  margin-left: 1em; }
+  margin-left: 1em;
+  color: white; }
 
 main h2 {
   font-family: "Aokahori"; }
@@ -248,21 +254,22 @@ main h2 {
   @keyframes grw2 {
     from {
       opacity: 1;
-      color: #ff9cb9; }
+      color: #f296b2ad; }
     to {
       opacity: .5; }
     from {
       opacity: .5; }
     to {
       opacity: 1;
-      color: #ff9cb9; } }
+      color: #f296b2ad; } }
   .page-wrapper {
-    display: grid; }
+    display: grid;
+    /*grid-template-rows: auto auto auto auto;*/ }
 
-  .sidebar {
+  header {
     grid-row: 1; }
 
-  #zen-intro > header > img {
+  .sidebar {
     grid-row: 2; }
 
   #zen-preamble {
@@ -277,15 +284,22 @@ main h2 {
   body {
     font-family: "Philosopher", sans-serif;
     color: #060606;
-    background-color: #d6d4d4;
+    background-color: #846060;
     margin: 0;
     padding: 1em; }
+    body .sidebar {
+      margin-top: 2em; }
+
+  .intro.preamble {
+    margin-top: 3em; }
 
   .intro .summary {
     margin-top: 1em;
+    grid-row: 1;
+    grid-column: 2/5;
     height: 110px; }
     .intro .summary a {
-      color: #669190; }
+      color: #8acdcb; }
       .intro .summary a :hover {
         color: #ffd0d8;
         font-size: 140px;
@@ -293,438 +307,343 @@ main h2 {
         margin: 50px auto 0; }
   .intro .preamble {
     grid-row: 1;
-    margin-top: 0; }
+    grid-column: 2/5;
+    margin-top: 1em; }
+    .intro .preamble abbr {
+      color: #8acdcb; }
+    .intro .preamble h3 {
+      font-size: 28px;
+      text-align: center; }
   .intro header {
-    height: 260px;
+    width: 100%;
+    height: 200px;
     background-image: url(images/heade.png);
-    margin: 1em;
-    border-radius: 7px;
-    width: 97%; }
-    .intro header h2, .intro header h1 {
+    border-radius: 5px;
+    grid-row: 1;
+    grid-column: 1/5;
+    z-index: 1;
+    margin: 0 auto; }
+    .intro header h2,
+    .intro header h1 {
       font-family: "Aokahori"; }
     .intro header h2 {
       font-size: 30px;
-      margin-left: 1em; }
+      text-align: center; }
     .intro header h1 {
-      margin-left: .3em;
+      margin-left: 1em;
       margin-top: 1.2em;
-      font-size: 40px; }
+      font-size: 35px; }
+    .intro header h2 abbr {
+      font-size: 35px;
+      animation-name: grw, grw2;
+      animation: grw, grw2 3.5s infinite; }
 
   .sidebar {
-    grid-row: 1;
-    height: 40px;
-    width: 40px;
-    position: relative;
-    left: 90%;
-    margin-bottom: -10px;
-    background-image: url(images/hamburger.png);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #FDEDED; }
-
-  .sidebar:hover {
-    cursor: pointer;
-    background-color: #ffd3d3; }
-
-  .design-selection, .design-archives, .zen-resources {
-    display: none; }
-
-  .design-selection.active, .design-archives.active, .zen-resources.design-archives.active {
-    display: block; }
-
-  .sidebar.active {
-    height: auto;
-    width: 100%;
-    position: relative;
-    left: 0%;
-    margin-bottom: -10px;
-    background-image: url(images/hamburger.png);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #FDEDED;
     border: 2px solid #fff;
-    border-radius: 10px;
-    background-image: url(images/image1.jpg);
-    margin-top: 1em; }
-    .sidebar.active h3 {
+    border-radius: 10px; }
+    .sidebar h3 {
       font-family: "Croissant One", cursive;
-      font-size: x-large;
+      font-size: medium;
       text-align: center; }
-    .sidebar.active nav ul {
+    .sidebar nav ul {
       list-style: none; }
-      .sidebar.active nav ul :hover {
-        width: 200px;
-        height: 100px;
+      .sidebar nav ul :hover {
         border-radius: 10px;
-        background: #ff9cb9;
-        transition: width 1s, height 1s, margin 1s;
-        margin: 50px auto 0;
-        font-size: 1.2em;
-        font-family: "Croissant One", cursive;
-        background-image: url(images/image.jpg); }
-    .sidebar.active nav li {
-      background-color: #f5a6bd49;
-      margin: 20px;
-      font-size: larger;
+        background: #f296b2ad;
+        transition: width 1s, height 1s, margin 3s;
+        margin: auto 0;
+        font-size: 1em;
+        font-family: "Croissant One", cursive; }
+    .sidebar nav li {
+      background-color: #f5a6bda1;
+      margin: 22px;
+      font-size: medium;
       font-family: "Philosopher", sans-serif;
       border: 1px #FA9BB7;
       list-style-position: unset; }
-      .sidebar.active nav li a {
+      .sidebar nav li a {
+        color: #323938; }
+    .sidebar .zen-resources ul {
+      list-style: none;
+      color: #323938; }
+      .sidebar .zen-resources ul :hover {
+        border-radius: 10px;
+        background: #f296b2ad;
+        transition: width 1s, height 1s, margin 3s;
+        margin: auto 0;
+        font-size: 1em;
+        font-family: "Croissant One", cursive; }
+    .sidebar .zen-resources li {
+      background-color: #f5a6bda1;
+      margin: 20px;
+      font-size: x-large;
+      font-family: "Philosopher", sans-serif;
+      border: 1px #FA9BB7;
+      list-style-position: unset; }
+      .sidebar .zen-resources li a {
         color: inherit; }
-      .sidebar.active nav li a {
-        background: linear-gradient(to right, #f5a6bd49, #f5a6bd49), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
+      .sidebar .zen-resources li a {
+        background: linear-gradient(to right, #f5a6bda1, #f5a6bda1), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
         background-size: 100% 3px, 0 3px;
         background-position: 100% 100%, 0 100%;
         background-repeat: no-repeat;
         transition: background-size 400ms; }
-      .sidebar.active nav li a:hover {
+      .sidebar .zen-resources li a:hover {
         background-size: 0 3px, 100% 3px;
         color: #222020; }
-    .sidebar.active .zen-resources ul {
-      list-style: none; }
-      .sidebar.active .zen-resources ul :hover {
-        width: 200px;
-        height: 100px;
-        border-radius: 10px;
-        background: #ff9cb9;
-        transition: width 2s, height 2s, margin 2s;
-        margin: 50px auto 0;
-        font-size: 1.2em;
-        font-family: "Croissant One", cursive;
-        background-image: url(images/image.jpg); }
-    .sidebar.active .zen-resources li {
-      background-color: #f5a6bd49;
-      margin: 20px;
-      font-size: x-large;
-      font-family: "Philosopher", sans-serif;
-      border: 1px #FA9BB7;
-      list-style-position: unset; }
-      .sidebar.active .zen-resources li a {
-        color: inherit; }
-      .sidebar.active .zen-resources li a {
-        background: linear-gradient(to right, #f5a6bd49, #f5a6bd49), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
-        background-size: 100% 3px, 0 3px;
-        background-position: 100% 100%, 0 100%;
-        background-repeat: no-repeat;
-        transition: background-size 400ms; }
-      .sidebar.active .zen-resources li a:hover {
-        background-size: 0 3px, 100% 3px;
-        color: #222020; } }
+
+  footer {
+    clear: both;
+    padding: 1em 10%;
+    color: #fff;
+    background: #17585ed2;
+    border-radius: 7px;
+    border: 2px solid #fff;
+    text-align: center; }
+
+  footer a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 2em;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: x-large;
+    animation-name: grw, grw2;
+    animation: grw, grw2 5.5s infinite; }
+
+  footer a:hover,
+  footer a:focus {
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    transition: color 0.25s ease-out, box-shadow 0.25s ease-out; }
+
+  footer a:visited {
+    color: rgba(255, 255, 255, 0.2); }
+
+  footer a::before {
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    overflow: visible;
+    font-size: 36px;
+    text-indent: 0; } }
 /* -------------------------------------------------------Medium  --------------------------------------------------------------*/
-   /* @media only screen and (min-width: 35rem) {
-    
-
+@media only screen and (min-width: 35rem) {
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; }
+    to {
+      margin-left: 1em;
+      width: 100%; } }
+  @keyframes slidein2 {
+    from {
+      margin-left: 100%;
+      width: 300%; }
+    to {
+      margin-left: 1.5em;
+      width: 100%; } }
   @keyframes grw2 {
-    
     from {
       opacity: 1;
-      color: $sideanimacolor;
-    }
-
+      color: #f296b2ad; }
     to {
-      opacity: .5;
-    }
-
+      opacity: .5; }
     from {
-      opacity: .5;
-      
-    }
-
+      opacity: .5; }
     to {
       opacity: 1;
-      color: $sideanimacolor;
-    }
-
-  }
-
-
-
+      color: #f296b2ad; } }
   body {
-    font-family: $fonts-body;
+    font-family: "Philosopher", sans-serif;
+    color: #060606;
+    background-color: #ffaec537;
+    margin: 0; }
+    body .sidebar {
+      margin-top: 2em; }
 
-    color: $text-dark;
-    background-color: $lcolor;
-    margin: 0;
-
-
-
-  }
-
-
-  .intro {
-    .summary {
-      margin-top: 1em;
-      grid-row: 1;
-      grid-column: 2/5;
-      height: 110px;
-
-
-      a {
-        color: $accent1;
-
-        :hover {
-          color: rgb(255, 208, 216);
-          font-size: 140px;
-
-          transition: font-size 2s;
-          margin: 50px auto 0;
-        }
-      }
-    }
-
-    .preamble {
-      grid-row: 1;
-      grid-column: 2/5;
-      margin-top: 0;
-
-
-
-
-    }
-
-    header {
-      width: 98%;
-      height: 250px;
-      background-image: url(images/heade.png);
-      border-radius: 5px;
-      grid-row: 1;
-      grid-column: 1/5;
-      z-index: 1;
-      margin: auto;
-
-      h2,
-      h1 {
-        font-family: $pincipalfont;
-      }
-
-      h2 {
-        font-size: 40px;
-        margin-left: 4em;
-      }
-
-      h1 {
-        margin-left: 1em;
-        margin-top: 1.2em;
-        font-size: 40px;
-      }
-
-      h2 {
-        abbr {
-          
-        font-size: 50px;
-          animation-name:  grw2;
-       
-          animation:  grw2 3.5s infinite;
-          
-
-        }
-      }
-    }
-
-  }
-
-
-    }
-    */
+  .intro .summary {
+    margin-top: 1em;
+    grid-row: 1;
+    grid-column: 2/5;
+    height: 110px; }
+    .intro .summary a {
+      color: #8acdcb; }
+      .intro .summary a :hover {
+        color: #ffd0d8;
+        font-size: 140px;
+        transition: font-size 2s;
+        margin: 50px auto 0; }
+  .intro .preamble {
+    grid-row: 1;
+    grid-column: 2/5;
+    margin-top: 0; }
+    .intro .preamble h3 {
+      font-size: 48px;
+      text-align: center; }
+  .intro header {
+    width: 100%;
+    height: 250px;
+    background-image: url(images/heade.png);
+    border-radius: 5px;
+    grid-row: 1;
+    grid-column: 1/5;
+    z-index: 1;
+    margin: 0 auto; }
+    .intro header h2,
+    .intro header h1 {
+      font-family: "Aokahori"; }
+    .intro header h2 {
+      font-size: 40px;
+      margin-left: 4em;
+      animation-duration: 4s;
+      animation-name: slidein2; }
+    .intro header h1 {
+      margin-left: 1em;
+      margin-top: 1.2em;
+      font-size: 40px;
+      animation-duration: 4s;
+      animation-name: slidein; }
+    .intro header h2 abbr {
+      font-size: 50px;
+      animation-name: grw2;
+      animation: grw2 3.5s infinite; } }
 /* -----------------------------------------------Large ------------------------------------------------------------- */
-    /*@media only screen and (min-width: 64rem) {
-    
-      @keyframes grw {
-        from {
-            transform: scale(0.5);
-            opacity: .8;
-        }
-        to {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes grw2 {
-        from {
-            opacity: .5;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-
-
-
-
+@media only screen and (min-width: 64rem) {
+  @keyframes grw {
+    from {
+      transform: scale(0.5);
+      opacity: .8; }
+    to {
+      transform: scale(1);
+      opacity: 0; } }
+  @keyframes grw2 {
+    from {
+      opacity: .5; }
+    to {
+      color: #f296b2ad; } }
   html {
-    background-color: $background-color;
-
-
-  }
+    background-color: #ffffff; }
 
   body {
-    font-family: $fonts-body;
-
-    color: $text-dark;
-    background-color: $lcolor;
-    margin: 0;
-
-  }
+    font-family: "Philosopher", sans-serif;
+    color: #060606;
+    background-color: #ffaec537;
+    margin: 0; }
+    body .sidebar {
+      margin-top: 27em; }
 
   .page-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-
-
-
-    .intro {
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .page-wrapper .intro {
       grid-column: 1/5;
       grid-row: 1;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-
-
-
-      header {
-        width: 98%;
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+      .page-wrapper .intro header {
+        width: 100%;
         height: 400px;
         border-radius: 5px;
         grid-row: 1;
         background-image: url(images/heade.png);
         grid-column: 1/5;
         z-index: 1;
-        margin: 1em;
-
-        h2,
-        h1 {
-          font-family: $pincipalfont;
-        }
-
-        h2 {
+        margin: 0 auto; }
+        .page-wrapper .intro header h2,
+        .page-wrapper .intro header h1 {
+          font-family: "Aokahori"; }
+        .page-wrapper .intro header h2 {
           font-size: 70px;
-          margin-left: 3em;
-        }
-
-        h1 {
+          margin-left: 3em; }
+        .page-wrapper .intro header h1 {
           margin-left: 1em;
           margin-top: 1.2em;
+          font-size: 80px; }
+        .page-wrapper .intro header h2 abbr {
           font-size: 80px;
-        }
-
-        h2 {
-          abbr {
-            
-          font-size: 80px;
-            animation-name: grw, grw2;
-         
-            animation: grw, grw2 3.5s infinite;
-            
-
-          }
-        }
-      }
-
-    }
-
-    .summary {
+          animation-name: grw, grw2;
+          animation: grw, grw2 5s infinite; }
+    .page-wrapper .summary {
       margin-top: 23em;
       grid-row: 1;
       grid-column: 2/5;
-      height: 300px;
-
-
-      a {
-        color: $accent1;
-
-        :hover {
-          color: rgb(255, 208, 216);
+      height: 300px; }
+      .page-wrapper .summary a {
+        color: #8acdcb; }
+        .page-wrapper .summary a :hover {
+          color: #ffd0d8;
           font-size: 140px;
-
           transition: font-size 2s;
-          margin: 50px auto 0;
-        }
-      }
-    }
-
-    .preamble {
+          margin: 50px auto 0; }
+    .page-wrapper .preamble {
       grid-row: 1/2;
       grid-column: 2/5;
       margin-top: 34em;
-      height: 225px;
-
-
-
-    }
-
-    #zen-supporting {
+      height: 225px; }
+    .page-wrapper #zen-supporting {
       grid-row: 1;
       grid-column: 2/5;
       margin-top: 48em;
-      margin-left: 1.5em;
-
-
-
-      footer {
-
-        text-align: center;
-
-        grid-column: 1/5;
-        margin-top: 1em;
-
-
-
-
-        .zen-validate-html:hover,
-        .zen-validate-css:hover,
-        .zen-license:hover,
-        .zen-accessibility:hover,
-        .zen-github:hover
-        {
-
-        color: $footer-color;
-        font-size: 50px;
-
-        transition: font-size 1s;
-        margin: 50px auto 0;
-
+      margin-left: .5em;
+      color: white; }
+      .page-wrapper #zen-supporting footer {
+        clear: both;
+        padding: 1em 10%;
+        color: #fff;
+        background: #17585ed2;
+        border-radius: 7px;
+        border: 2px solid #fff;
+        text-align: center; }
+      .page-wrapper #zen-supporting footer a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 2em;
+        position: relative;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: x-large;
         animation-name: grw, grw2;
-        animation-duration: .8s;
-
-        animation-direction: alternate-reverse;
-      }
-
-
-      a {
-        margin: 3em;
-        font-size: 20px;
-      }
-
-    }
-
-
-  }
-}
-
+        animation: grw, grw2 5.5s infinite; }
+      .page-wrapper #zen-supporting footer a:hover,
+      .page-wrapper #zen-supporting footer a:focus {
+        color: rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+        -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+        -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+        transition: color 0.25s ease-out, box-shadow 0.25s ease-out; }
+      .page-wrapper #zen-supporting footer a:visited {
+        color: rgba(255, 255, 255, 0.2); }
+      .page-wrapper #zen-supporting footer a::before {
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        overflow: visible;
+        font-size: 36px;
+        text-indent: 0; } }
 .sidebar {
   grid-row: 1;
   grid-column: 1/2;
-  margin-top: 27em;
-
-
-  nav {
-    ul {
-      li {
-        font-size: x-large;
-        margin: 20px;
-        border-radius: 5px;
-      }
-    }
-
-
-  }
-
-
-
-    }}*/
+  height: 76.3%;
+  background-image: url(images/arena.jpg);
+  text-align: left; }
+  .sidebar a:nth-child(2) {
+    font-size: 15px;
+    color: #962a2a; }
+  .sidebar .design-archives,
+  .sidebar .zen-resources {
+    margin-top: 6em;
+    display: block; }
+  .sidebar nav ul li {
+    color: #846060; }
+    .sidebar nav ul li a {
+      font-size: 25px;
+      margin: 5px;
+      border-radius: 5px; }
 
 /*# sourceMappingURL=style.css.map */
