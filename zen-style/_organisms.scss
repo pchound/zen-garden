@@ -517,6 +517,11 @@
     background-color: $lcolor;
     margin: 0;
 
+
+    .sidebar{
+      margin-top: 27em;
+    }
+   
   }
 
   .page-wrapper {
@@ -693,7 +698,7 @@
 .sidebar {
   grid-row: 1;
   grid-column: 1/2;
-  margin-top: 27em;
+  
   height: 76.3%;
   background-image: url(images/arena.jpg);
   text-align: left;
