@@ -271,6 +271,8 @@ main h2 {
     background-color: #846060;
     margin: 0;
     padding: 1em; }
+    body .sidebar {
+      margin-top: 2em; }
 
   .intro.preamble {
     margin-top: 3em; }
@@ -446,6 +448,8 @@ main h2 {
     color: #060606;
     background-color: #ffaec537;
     margin: 0; }
+    body .sidebar {
+      margin-top: 2em; }
 
   .intro .summary {
     margin-top: 1em;
