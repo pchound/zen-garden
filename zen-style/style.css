@@ -262,15 +262,20 @@ main h2 {
     to {
       opacity: 1;
       color: #f296b2ad; } }
-  html {
-    background-color: #ffffff; }
+  .page-wrapper {
+    display: grid; }
 
-  body {
-    font-family: "Philosopher", sans-serif;
-    color: #060606;
-    background-color: #846060;
-    margin: 0;
-    padding: 1em; }
+  header {
+    grid-row: 1; }
+
+  .sidebar {
+    grid-row: 2; }
+
+  #zen-preamble {
+    grid-row: 3; }
+
+  #zen-supporting {
+    grid-row: 4; }
 
   .intro.preamble {
     margin-top: 3em; }
@@ -279,157 +284,259 @@ main h2 {
     margin-top: 1em;
     grid-row: 1;
     grid-column: 2/5;
-    height: 110px; }
+    height: 110px;
+    /* -------------------------------------------------------Medium  --------------------------------------------------------------*/ }
     .intro .summary a {
       color: #8acdcb; }
       .intro .summary a :hover {
         color: #ffd0d8;
         font-size: 140px;
-        transition: font-size 2s;
-        margin: 50px auto 0; }
-  .intro .preamble {
-    grid-row: 1;
-    grid-column: 2/5;
-    margin-top: 1em; }
-    .intro .preamble abbr {
-      color: #8acdcb; }
-    .intro .preamble h3 {
-      font-size: 28px;
-      text-align: center; }
-  .intro header {
-    width: 100%;
-    height: 200px;
-    background-image: url(images/heade.png);
-    border-radius: 5px;
-    grid-row: 1;
-    grid-column: 1/5;
-    z-index: 1;
-    margin: 0 auto; }
-    .intro header h2,
-    .intro header h1 {
-      font-family: "Aokahori"; }
-    .intro header h2 {
-      font-size: 30px;
-      text-align: center; }
-    .intro header h1 {
-      margin-left: 1em;
-      margin-top: 1.2em;
-      font-size: 35px; }
-    .intro header h2 abbr {
-      font-size: 35px;
-      animation-name: grw, grw2;
-      animation: grw, grw2 3.5s infinite; }
-
-  .sidebar {
-    grid-row: 2;
+        transition: font-size 2s; }
+        .intro .summary a :hover html {
+          background-color: #ffffff; }
+        .intro .summary a :hover body {
+          font-family: "Philosopher", sans-serif;
+          color: #060606;
+          background-color: #846060;
+          margin: 0;
+          padding: 1em; }
+        .intro .summary a :hover .intro .summary {
+          margin-top: 1em;
+          height: 110px; }
+          .intro .summary a :hover .intro .summary a {
+            color: #8acdcb; }
+            .intro .summary a :hover .intro .summary a :hover {
+              color: #ffd0d8;
+              font-size: 140px;
+              transition: font-size 2s;
+              margin: 50px auto 0; }
+        .intro .summary a :hover .intro .preamble {
+          grid-row: 1;
+          margin-top: 0; }
+          .intro .summary a :hover .intro .preamble .preamble {
+            grid-row: 1;
+            grid-column: 2/5;
+            margin-top: 1em; }
+            .intro .summary a :hover .intro .preamble .preamble abbr {
+              color: #8acdcb; }
+            .intro .summary a :hover .intro .preamble .preamble h3 {
+              font-size: 28px;
+              text-align: center; }
+          .intro .summary a :hover .intro .preamble header {
+            width: 100%;
+            height: 200px;
+            background-image: url(images/heade.png);
+            border-radius: 5px;
+            grid-row: 1;
+            grid-column: 1/5;
+            z-index: 1;
+            margin: 0 auto; }
+            .intro .summary a :hover .intro .preamble header h2,
+            .intro .summary a :hover .intro .preamble header h1 {
+              font-family: "Aokahori"; }
+            .intro .summary a :hover .intro .preamble header h2 {
+              font-size: 30px;
+              text-align: center; }
+            .intro .summary a :hover .intro .preamble header h1 {
+              margin-left: 1em;
+              margin-top: 1.2em;
+              font-size: 35px; }
+            .intro .summary a :hover .intro .preamble header h2 abbr {
+              font-size: 35px;
+              animation-name: grw, grw2;
+              animation: grw, grw2 3.5s infinite; }
+        .intro .summary a :hover .intro .sidebar {
+          grid-row: 2;
+          border: 2px solid #fff;
+          border-radius: 10px; }
+          .intro .summary a :hover .intro .sidebar h3 {
+            font-family: "Croissant One", cursive;
+            font-size: medium;
+            text-align: center; }
+          .intro .summary a :hover .intro .sidebar nav ul {
+            list-style: none; }
+            .intro .summary a :hover .intro .sidebar nav ul :hover {
+              border-radius: 10px;
+              background: #f296b2ad;
+              transition: width 1s, height 1s, margin 3s;
+              margin: auto 0;
+              font-size: 1em;
+              font-family: "Croissant One", cursive; }
+          .intro .summary a :hover .intro .sidebar nav li {
+            background-color: #f5a6bda1;
+            margin: 22px;
+            font-size: medium;
+            font-family: "Philosopher", sans-serif;
+            border: 1px #FA9BB7;
+            list-style-position: unset; }
+            .intro .summary a :hover .intro .sidebar nav li a {
+              color: #323938; }
+          .intro .summary a :hover .intro .sidebar .zen-resources ul {
+            list-style: none;
+            color: #323938; }
+            .intro .summary a :hover .intro .sidebar .zen-resources ul :hover {
+              border-radius: 10px;
+              background: #f296b2ad;
+              transition: width 1s, height 1s, margin 3s;
+              margin: auto 0;
+              font-size: 1em;
+              font-family: "Croissant One", cursive; }
+          .intro .summary a :hover .intro .sidebar .zen-resources li {
+            background-color: #f5a6bda1;
+            margin: 20px;
+            font-size: x-large;
+            font-family: "Philosopher", sans-serif;
+            border: 1px #FA9BB7;
+            list-style-position: unset; }
+            .intro .summary a :hover .intro .sidebar .zen-resources li a {
+              color: inherit; }
+            .intro .summary a :hover .intro .sidebar .zen-resources li a {
+              background: linear-gradient(to right, #f5a6bda1, #f5a6bda1), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
+              background-size: 100% 3px, 0 3px;
+              background-position: 100% 100%, 0 100%;
+              background-repeat: no-repeat;
+              transition: background-size 400ms; }
+            .intro .summary a :hover .intro .sidebar .zen-resources li a:hover {
+              background-size: 0 3px, 100% 3px;
+              color: #222020; }
+        .intro .summary a :hover .intro footer {
+          clear: both;
+          padding: 1em 10%;
+          color: #fff;
+          background: #17585ed2;
+          border-radius: 7px;
+          border: 2px solid #fff;
+          text-align: center; }
+        .intro .summary a :hover .intro footer a {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          margin: 2em;
+          position: relative;
+          color: rgba(255, 255, 255, 0.5);
+          font-size: x-large;
+          animation-name: grw, grw2;
+          animation: grw, grw2 5.5s infinite; }
+        .intro .summary a :hover .intro footer a:hover,
+        .intro .summary a :hover .intro footer a:focus {
+          color: rgba(255, 255, 255, 0.3);
+          text-decoration: none;
+          -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+          -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+          transition: color 0.25s ease-out, box-shadow 0.25s ease-out; }
+        .intro .summary a :hover .intro footer a:visited {
+          color: rgba(255, 255, 255, 0.2); }
+        .intro .summary a :hover .intro footer a::before {
+          display: block;
+          position: absolute;
+          top: 3px;
+          left: 0;
+          overflow: visible;
+          font-size: 36px;
+          text-indent: 0; } }
+  @media only screen and (min-width: 2rem) and (min-width: 35rem) {
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%; }
+      to {
+        margin-left: 1em;
+        width: 100%; } }
+    @keyframes slidein2 {
+      from {
+        margin-left: 100%;
+        width: 300%; }
+      to {
+        margin-left: 1.5em;
+        width: 100%; } } }
+@media only screen and (min-width: 2rem) {
+    .intro .summary header {
+      height: 260px;
+      background-image: url(images/heade.png);
+      margin: 1em;
+      border-radius: 7px;
+      width: 97%; }
+      .intro .summary header h2, .intro .summary header h1 {
+        font-family: "Aokahori"; }
+      .intro .summary header h2 {
+        font-size: 30px;
+        margin-left: 1em; }
+      .intro .summary header h1 {
+        margin-left: .3em;
+        margin-top: 1.2em;
+        font-size: 40px; }
+  .intro .sidebar {
     border: 2px solid #fff;
-    border-radius: 10px; }
-    .sidebar h3 {
+    border-radius: 10px;
+    background-image: url(images/image1.jpg);
+    margin-top: 1em; }
+    .intro .sidebar h3 {
       font-family: "Croissant One", cursive;
-      font-size: medium;
+      font-size: x-large;
       text-align: center; }
-    .sidebar nav ul {
+    .intro .sidebar nav ul {
       list-style: none; }
-      .sidebar nav ul :hover {
+      .intro .sidebar nav ul :hover {
+        width: 200px;
+        height: 100px;
         border-radius: 10px;
         background: #f296b2ad;
-        transition: width 1s, height 1s, margin 3s;
-        margin: auto 0;
-        font-size: 1em;
-        font-family: "Croissant One", cursive; }
-    .sidebar nav li {
+        transition: width 1s, height 1s, margin 1s;
+        margin: 50px auto 0;
+        font-size: 1.2em;
+        font-family: "Croissant One", cursive;
+        background-image: url(images/image.jpg); }
+    .intro .sidebar nav li {
       background-color: #f5a6bda1;
-      margin: 22px;
-      font-size: medium;
+      margin: 20px;
+      font-size: larger;
       font-family: "Philosopher", sans-serif;
       border: 1px #FA9BB7;
       list-style-position: unset; }
-      .sidebar nav li a {
-        color: #323938; }
-    .sidebar .zen-resources ul {
-      list-style: none;
-      color: #323938; }
-      .sidebar .zen-resources ul :hover {
+      .intro .sidebar nav li a {
+        color: inherit; }
+      .intro .sidebar nav li a {
+        background: linear-gradient(to right, #f5a6bda1, #f5a6bda1), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
+        background-size: 100% 3px, 0 3px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms; }
+      .intro .sidebar nav li a:hover {
+        background-size: 0 3px, 100% 3px;
+        color: #222020; }
+    .intro .sidebar .zen-resources ul {
+      list-style: none; }
+      .intro .sidebar .zen-resources ul :hover {
+        width: 200px;
+        height: 100px;
         border-radius: 10px;
         background: #f296b2ad;
-        transition: width 1s, height 1s, margin 3s;
-        margin: auto 0;
-        font-size: 1em;
-        font-family: "Croissant One", cursive; }
-    .sidebar .zen-resources li {
+        transition: width 2s, height 2s, margin 2s;
+        margin: 50px auto 0;
+        font-size: 1.2em;
+        font-family: "Croissant One", cursive;
+        background-image: url(images/image.jpg); }
+    .intro .sidebar .zen-resources li {
       background-color: #f5a6bda1;
       margin: 20px;
       font-size: x-large;
       font-family: "Philosopher", sans-serif;
       border: 1px #FA9BB7;
       list-style-position: unset; }
-      .sidebar .zen-resources li a {
+      .intro .sidebar .zen-resources li a {
         color: inherit; }
-      .sidebar .zen-resources li a {
+      .intro .sidebar .zen-resources li a {
         background: linear-gradient(to right, #f5a6bda1, #f5a6bda1), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
         background-size: 100% 3px, 0 3px;
         background-position: 100% 100%, 0 100%;
         background-repeat: no-repeat;
         transition: background-size 400ms; }
-      .sidebar .zen-resources li a:hover {
+      .intro .sidebar .zen-resources li a:hover {
         background-size: 0 3px, 100% 3px;
         color: #222020; }
 
-  footer {
-    clear: both;
-    padding: 1em 10%;
-    color: #fff;
-    background: #17585ed2;
-    border-radius: 7px;
-    border: 2px solid #fff;
-    text-align: center; }
-
-  footer a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin: 2em;
-    position: relative;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: x-large;
-    animation-name: grw, grw2;
-    animation: grw, grw2 5.5s infinite; }
-
-  footer a:hover,
-  footer a:focus {
-    color: rgba(255, 255, 255, 0.3);
-    text-decoration: none;
-    -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
-    -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
-    transition: color 0.25s ease-out, box-shadow 0.25s ease-out; }
-
-  footer a:visited {
-    color: rgba(255, 255, 255, 0.2); }
-
-  footer a::before {
-    display: block;
-    position: absolute;
-    top: 3px;
-    left: 0;
-    overflow: visible;
-    font-size: 36px;
-    text-indent: 0; } }
-/* -------------------------------------------------------Medium  --------------------------------------------------------------*/
-@media only screen and (min-width: 35rem) {
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%; }
-    to {
-      margin-left: 1em;
-      width: 100%; } }
-  @keyframes slidein2 {
-    from {
-      margin-left: 100%;
-      width: 300%; }
-    to {
-      margin-left: 1.5em;
-      width: 100%; } }
+  /* -------------------------------------------------------Medium  --------------------------------------------------------------*/ }
+@media only screen and (min-width: 2rem) and (min-width: 35rem) {
   @keyframes grw2 {
     from {
       opacity: 1;
@@ -492,21 +599,30 @@ main h2 {
     .intro header h2 abbr {
       font-size: 50px;
       animation-name: grw2;
-      animation: grw2 3.5s infinite; } }
-/* -----------------------------------------------Large ------------------------------------------------------------- */
-@media only screen and (min-width: 64rem) {
+      animation: grw2 3.5s infinite; }
+
+  to {
+    transform: scale(1);
+    opacity: 0; } }
+@media only screen and (min-width: 2rem) {
+  @keyframes grw2 {
+    from {
+      opacity: .5; }
+    to {
+      color: #f296b2ad; } } }
+@media only screen and (min-width: 2rem) and (min-width: 64rem) {
   @keyframes grw {
     from {
       transform: scale(0.5);
       opacity: .8; }
     to {
       transform: scale(1);
-      opacity: 0; } }
+      opacity: 1; } }
   @keyframes grw2 {
     from {
       opacity: .5; }
     to {
-      color: #f296b2ad; } }
+      opacity: 1; } }
   html {
     background-color: #ffffff; }
 
@@ -569,7 +685,8 @@ main h2 {
       grid-column: 2/5;
       margin-top: 48em;
       margin-left: .5em;
-      color: white; }
+      color: white;
+      animation-direction: alternate-reverse; }
       .page-wrapper #zen-supporting footer {
         clear: both;
         padding: 1em 10%;
@@ -604,7 +721,10 @@ main h2 {
         left: 0;
         overflow: visible;
         font-size: 36px;
-        text-indent: 0; } }
+        text-indent: 0; }
+    .page-wrapper a {
+      margin: 3em;
+      font-size: 20px; } }
 .sidebar {
   grid-row: 1;
   grid-column: 1/2;
