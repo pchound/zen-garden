@@ -1,0 +1,616 @@
+@import 'variables';
+@import 'atoms';
+@import "molecules";
+
+
+
+@media only screen and (min-width: 2rem) {
+
+  @keyframes grw2 {
+    
+    from {
+      opacity: 1;
+      color: $sideanimacolor;
+    }
+
+    to {
+      opacity: .5;
+    }
+
+    from {
+      opacity: .5;
+      
+    }
+
+    to {
+      opacity: 1;
+      color: $sideanimacolor;
+    }
+
+  }
+
+  .page-wrapper
+  {
+    display: grid;
+  }
+  .sidebar
+  {
+    grid-row: 1;
+  }
+  #zen-intro > header > img
+  {
+    grid-row: 2;
+  }
+
+
+#zen-preamble
+{
+  grid-row: 3;
+  
+}
+#zen-supporting
+{
+  grid-row: 4;
+}
+
+
+    html {
+      background-color: $background-color;
+    }
+    
+    body {
+      font-family: $fonts-body;
+    
+      color: $text-dark;
+      background-color: $primary;
+      margin: 0;
+      padding: 1em;
+    }
+    
+    
+    .intro{
+      .summary {
+       margin-top: 1em;
+        
+        height: 110px;
+        
+        
+          a {
+            color: $accent1; 
+            :hover{
+              color: rgb(255, 208, 216);
+            font-size: 140px;
+                
+                transition: font-size 2s;
+                margin: 50px auto 0;
+            }
+          }
+        }
+        .preamble {
+          grid-row: 1;
+          margin-top: 0;
+
+        }
+    header
+    {
+      height: 260px;
+      background-image: url(images/heade.png);
+      margin: 1em;
+      border-radius: 7px;
+      width: 97%;
+     
+    
+          h2, h1 {
+            font-family: $pincipalfont;
+          }
+    
+          h2{
+            font-size: 30px;
+            margin-left: 1em;
+          }
+          h1{
+            margin-left: .3em;
+            margin-top: 1.2em;
+            font-size: 40px;
+          }
+    }
+    }
+
+
+    .sidebar
+    {
+      grid-row: 1;
+      height: 40px;
+      width: 40px;
+      position: relative;
+      left: 90%;
+      margin-bottom: -10px;
+      background-image: url(images/hamburger.png);
+      background-size: 70%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #FDEDED;
+    }
+
+    .sidebar:hover
+    {
+      cursor: pointer;
+      background-color: #ffd3d3;
+    }
+    
+    .design-selection, .design-archives, .zen-resources
+    {
+      display: none;
+    }
+
+    .design-selection.active, .design-archives.active, .zen-resources.design-archives.active
+    {
+      display: block;
+    }
+
+  
+
+    .sidebar.active {
+  
+      
+      height: auto;
+      width: 100%;
+      position: relative;
+      left: 0%;
+      margin-bottom: -10px;
+      background-image: url(images/hamburger.png);
+      background-size: 70%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #FDEDED;
+
+
+
+
+
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-image: url(images/image1.jpg);
+    margin-top: 1em;
+    
+    h3{
+      font-family: $fonts-headline;
+      font-size: x-large;
+      text-align: center;
+    }
+    nav{
+    
+    ul{
+    list-style:none ;
+      :hover{
+        width: 200px;
+        height: 100px;
+        border-radius: 10px;
+        background: $sideanimacolor;
+        transition: width 1s, height 1s, margin 1s;
+        margin: 50px auto 0;
+        font-size: 1.2em;
+        font-family: $fonts-headline;
+        background-image: url(images/image.jpg) ;
+       }      
+    }
+    
+    li{
+      background-color:$asidecolor;
+      margin: 20px;
+      font-size: larger;
+      font-family: $fonts-body;
+      border: 1px $grey-sidebar ;
+    
+      list-style-position:unset;
+     
+    
+      a {
+        color: inherit;
+       
+      }
+      
+      a {
+        background:
+          linear-gradient(
+            to right,
+            $asidecolor,
+            $asidecolor
+          ),
+          linear-gradient(
+            to right,
+            $lcolor,
+            $lcolor,
+            $lcolor
+        );
+        background-size: 100% 3px, 0 3px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms;
+      }
+      
+      a:hover {
+        background-size: 0 3px, 100% 3px;
+        color: #222020;
+      }
+      }
+    }
+    
+      
+    .zen-resources{
+      ul{
+        list-style:none ;
+            :hover{
+              width: 200px;
+              height: 100px;
+              border-radius: 10px;
+              background: $sideanimacolor;
+              transition: width 2s, height 2s, margin 2s;
+              margin: 50px auto 0;
+              font-size: 1.2em;
+              font-family: $fonts-headline;
+              background-image: url(images/image.jpg) ;
+             }
+              
+          }
+          li{
+            background-color:$asidecolor;
+            margin: 20px;
+            font-size: x-large;
+            font-family: $fonts-body;
+            border: 1px $grey-sidebar ;
+        
+            list-style-position:unset;
+           
+        
+            a {
+              color: inherit;
+             
+            }
+            
+            a {
+              background:
+                linear-gradient(
+                  to right,
+                  $asidecolor,
+                  $asidecolor
+                ),
+                linear-gradient(
+                  to right,
+                  $lcolor,
+                  $lcolor,
+                  $lcolor
+              );
+              background-size: 100% 3px, 0 3px;
+              background-position: 100% 100%, 0 100%;
+              background-repeat: no-repeat;
+              transition: background-size 400ms;
+            }
+            
+            a:hover {
+              background-size: 0 3px, 100% 3px;
+              color: #222020;
+            }
+            }
+          }
+        }
+      }
+    
+      /* -------------------------------------------------------Medium  --------------------------------------------------------------*/
+    
+   /* @media only screen and (min-width: 35rem) {
+    
+
+  @keyframes grw2 {
+    
+    from {
+      opacity: 1;
+      color: $sideanimacolor;
+    }
+
+    to {
+      opacity: .5;
+    }
+
+    from {
+      opacity: .5;
+      
+    }
+
+    to {
+      opacity: 1;
+      color: $sideanimacolor;
+    }
+
+  }
+
+
+
+  body {
+    font-family: $fonts-body;
+
+    color: $text-dark;
+    background-color: $lcolor;
+    margin: 0;
+
+
+
+  }
+
+
+  .intro {
+    .summary {
+      margin-top: 1em;
+      grid-row: 1;
+      grid-column: 2/5;
+      height: 110px;
+
+
+      a {
+        color: $accent1;
+
+        :hover {
+          color: rgb(255, 208, 216);
+          font-size: 140px;
+
+          transition: font-size 2s;
+          margin: 50px auto 0;
+        }
+      }
+    }
+
+    .preamble {
+      grid-row: 1;
+      grid-column: 2/5;
+      margin-top: 0;
+
+
+
+
+    }
+
+    header {
+      width: 98%;
+      height: 250px;
+      background-image: url(images/heade.png);
+      border-radius: 5px;
+      grid-row: 1;
+      grid-column: 1/5;
+      z-index: 1;
+      margin: auto;
+
+      h2,
+      h1 {
+        font-family: $pincipalfont;
+      }
+
+      h2 {
+        font-size: 40px;
+        margin-left: 4em;
+      }
+
+      h1 {
+        margin-left: 1em;
+        margin-top: 1.2em;
+        font-size: 40px;
+      }
+
+      h2 {
+        abbr {
+          
+        font-size: 50px;
+          animation-name:  grw2;
+       
+          animation:  grw2 3.5s infinite;
+          
+
+        }
+      }
+    }
+
+  }
+
+
+    }
+    */
+    
+    /* -----------------------------------------------Large ------------------------------------------------------------- */
+    
+    
+    /*@media only screen and (min-width: 64rem) {
+    
+      @keyframes grw {
+        from {
+            transform: scale(0.5);
+            opacity: .8;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes grw2 {
+        from {
+            opacity: .5;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+
+
+
+
+  html {
+    background-color: $background-color;
+
+
+  }
+
+  body {
+    font-family: $fonts-body;
+
+    color: $text-dark;
+    background-color: $lcolor;
+    margin: 0;
+
+  }
+
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+
+
+    .intro {
+      grid-column: 1/5;
+      grid-row: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+
+      header {
+        width: 98%;
+        height: 400px;
+        border-radius: 5px;
+        grid-row: 1;
+        background-image: url(images/heade.png);
+        grid-column: 1/5;
+        z-index: 1;
+        margin: 1em;
+
+        h2,
+        h1 {
+          font-family: $pincipalfont;
+        }
+
+        h2 {
+          font-size: 70px;
+          margin-left: 3em;
+        }
+
+        h1 {
+          margin-left: 1em;
+          margin-top: 1.2em;
+          font-size: 80px;
+        }
+
+        h2 {
+          abbr {
+            
+          font-size: 80px;
+            animation-name: grw, grw2;
+         
+            animation: grw, grw2 3.5s infinite;
+            
+
+          }
+        }
+      }
+
+    }
+
+    .summary {
+      margin-top: 23em;
+      grid-row: 1;
+      grid-column: 2/5;
+      height: 300px;
+
+
+      a {
+        color: $accent1;
+
+        :hover {
+          color: rgb(255, 208, 216);
+          font-size: 140px;
+
+          transition: font-size 2s;
+          margin: 50px auto 0;
+        }
+      }
+    }
+
+    .preamble {
+      grid-row: 1/2;
+      grid-column: 2/5;
+      margin-top: 34em;
+      height: 225px;
+
+
+
+    }
+
+    #zen-supporting {
+      grid-row: 1;
+      grid-column: 2/5;
+      margin-top: 48em;
+      margin-left: 1.5em;
+
+
+
+      footer {
+
+        text-align: center;
+
+        grid-column: 1/5;
+        margin-top: 1em;
+
+
+
+
+        .zen-validate-html:hover,
+        .zen-validate-css:hover,
+        .zen-license:hover,
+        .zen-accessibility:hover,
+        .zen-github:hover
+        {
+
+        color: $footer-color;
+        font-size: 50px;
+
+        transition: font-size 1s;
+        margin: 50px auto 0;
+
+        animation-name: grw, grw2;
+        animation-duration: .8s;
+
+        animation-direction: alternate-reverse;
+      }
+
+
+      a {
+        margin: 3em;
+        font-size: 20px;
+      }
+
+    }
+
+
+  }
+}
+
+.sidebar {
+  grid-row: 1;
+  grid-column: 1/2;
+  margin-top: 27em;
+
+
+  nav {
+    ul {
+      li {
+        font-size: x-large;
+        margin: 20px;
+        border-radius: 5px;
+      }
+    }
+
+
+  }
+
+
+
+    }}*/
