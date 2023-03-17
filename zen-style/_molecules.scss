@@ -4,15 +4,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
 
-
+body{
+  background-image: url(images/ornament.png);
+}
 
 .summary {
 
   font-size: larger;
   margin-left: .8em;
+color: white;
 
 
-  background-image: url(images/back2.jpg);
+ 
 
   text-shadow: #000 .4px .4px;
   
@@ -36,14 +39,15 @@
   color: $text-dark;
 
   text-shadow: #000 .4px .4px;
-  background-image: url(images/back2.jpg);
-  margin-left: 1em;
 
+  margin-left: 1em;
+color: white;
 
 
 }
 
 main {
+
   h2 {
     font-family: $pincipalfont;
   }

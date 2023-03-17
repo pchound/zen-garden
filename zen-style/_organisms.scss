@@ -7,7 +7,7 @@
 @media only screen and (min-width: 2rem) {
 
   @keyframes grw2 {
-    
+
     from {
       opacity: 1;
       color: $sideanimacolor;
@@ -19,7 +19,7 @@
 
     from {
       opacity: .5;
-      
+
     }
 
     to {
@@ -46,13 +46,18 @@
     padding: 1em;
   }
 
+  .intro.preamble {
+    margin-top: 3em;
+  }
 
   .intro {
+
     .summary {
       margin-top: 1em;
       grid-row: 1;
       grid-column: 2/5;
       height: 110px;
+
 
 
       a {
@@ -71,22 +76,28 @@
     .preamble {
       grid-row: 1;
       grid-column: 2/5;
-      margin-top: 0;
+      margin-top: 1em;
 
+      abbr {
+        color: $accent1
+      }
 
-
+      h3 {
+        font-size: 28px;
+        text-align: center;
+      }
 
     }
 
     header {
-      width: 98%;
+      width: 100%;
       height: 200px;
       background-image: url(images/heade.png);
       border-radius: 5px;
       grid-row: 1;
       grid-column: 1/5;
       z-index: 1;
-      margin: auto;
+      margin: 0 auto;
 
       h2,
       h1 {
@@ -95,7 +106,7 @@
 
       h2 {
         font-size: 30px;
-       text-align: center;
+        text-align: center;
       }
 
       h1 {
@@ -106,12 +117,12 @@
 
       h2 {
         abbr {
-          
-        font-size: 35px;
+
+          font-size: 35px;
           animation-name: grw, grw2;
-       
+
           animation: grw, grw2 3.5s infinite;
-          
+
 
         }
       }
@@ -124,15 +135,15 @@
 
     grid-row: 2;
 
-
+  
     border: 2px solid #fff;
     border-radius: 10px;
-    background-image: url(images/image1.jpg);
-    margin-top: 1em;
+
+
 
     h3 {
       font-family: $fonts-headline;
-      font-size: large;
+      font-size: medium;
       text-align: center;
     }
 
@@ -140,17 +151,16 @@
 
       ul {
         list-style: none;
-
+       
         :hover {
-          width: 200px;
-          height: 100px;
+         
           border-radius: 10px;
           background: $sideanimacolor;
-          transition: width 1s, height 1s, margin 1s;
-          margin: 50px auto 0;
+          transition: width 1s, height 1s, margin 3s;
+          margin: auto 0;
           font-size: 1em;
           font-family: $fonts-headline;
-          background-image: url(images/image.jpg);
+          
 
 
 
@@ -160,8 +170,8 @@
 
       li {
         background-color: $asidecolor;
-        margin: 20px;
-        font-size: large;
+        margin: 22px;
+        font-size: medium;
         font-family: $fonts-body;
         border: 1px $grey-sidebar ;
 
@@ -169,13 +179,13 @@
 
 
         a {
-          color: inherit;
+          color: $section-color;
 
         }
 
-        
 
-       
+
+
 
 
 
@@ -187,17 +197,17 @@
     .zen-resources {
       ul {
         list-style: none;
+        color: $section-color;
 
         :hover {
-          width: 200px;
-          height: 100px;
+        
           border-radius: 10px;
           background: $sideanimacolor;
-          transition: width 2s, height 2s, margin 2s;
-          margin: 50px auto 0;
-          font-size: 1.2em;
+          transition: width 1s, height 1s, margin 3s;
+          margin: auto 0;
+          font-size: 1em;
           font-family: $fonts-headline;
-       
+
 
 
 
@@ -248,15 +258,94 @@
 
 
   }
+
+  footer {
+    clear: both;
+    padding: 1em 10%;
+    color: #fff;
+    background: #17585ed2;
+    border-radius: 7px;
+    border: 2px solid #fff;
+    text-align: center;
+
+  }
+
+  footer a {
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+    margin: 2em;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: x-large;
+
+    animation-name: grw, grw2;
+
+    animation: grw, grw2 5.5s infinite;
+  }
+
+  footer a:hover,
+  footer a:focus {
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+
+
+
+
+  }
+
+  footer a:visited {
+    color: rgba(255, 255, 255, 0.2);
+
+  }
+
+  footer a::before {
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    overflow: visible;
+    font-size: 36px;
+    text-indent: 0;
+
+
+  }
+
 }
 
 /* -------------------------------------------------------Medium  --------------------------------------------------------------*/
 
 @media only screen and (min-width: 35rem) {
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
 
+    to {
+      margin-left: 1em;
+      width: 100%;
+    }
+  }
+
+  @keyframes slidein2 {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+
+    to {
+      margin-left: 1.5em;
+      width: 100%;
+    }
+  }
 
   @keyframes grw2 {
-    
+
     from {
       opacity: 1;
       color: $sideanimacolor;
@@ -268,7 +357,7 @@
 
     from {
       opacity: .5;
-      
+
     }
 
     to {
@@ -318,45 +407,54 @@
       grid-column: 2/5;
       margin-top: 0;
 
+      h3 {
+        font-size: 48px;
+        text-align: center;
 
+      }
 
 
     }
 
     header {
-      width: 98%;
+      width: 100%;
       height: 250px;
       background-image: url(images/heade.png);
       border-radius: 5px;
       grid-row: 1;
       grid-column: 1/5;
       z-index: 1;
-      margin: auto;
+      margin: 0 auto;
 
       h2,
       h1 {
         font-family: $pincipalfont;
+
       }
 
       h2 {
         font-size: 40px;
         margin-left: 4em;
+        animation-duration: 4s;
+        animation-name: slidein2;
       }
 
       h1 {
         margin-left: 1em;
         margin-top: 1.2em;
         font-size: 40px;
+        animation-duration: 4s;
+        animation-name: slidein;
       }
 
       h2 {
         abbr {
-          
-        font-size: 50px;
-          animation-name:  grw2;
-       
-          animation:  grw2 3.5s infinite;
-          
+
+          font-size: 50px;
+          animation-name: grw2;
+
+          animation: grw2 3.5s infinite;
+
 
         }
       }
@@ -381,18 +479,18 @@
 
     to {
       transform: scale(1);
-      opacity: 1;
+      opacity: 0;
     }
   }
 
   @keyframes grw2 {
     from {
       opacity: .5;
-      
+
     }
 
     to {
-      opacity: 1;
+
       color: $sideanimacolor;
     }
   }
@@ -432,14 +530,14 @@
 
 
       header {
-        width: 98%;
+        width: 100%;
         height: 400px;
         border-radius: 5px;
         grid-row: 1;
         background-image: url(images/heade.png);
         grid-column: 1/5;
         z-index: 1;
-        margin: 1em;
+        margin: 0 auto;
 
         h2,
         h1 {
@@ -459,12 +557,12 @@
 
         h2 {
           abbr {
-            
-          font-size: 80px;
+
+            font-size: 80px;
             animation-name: grw, grw2;
-         
-            animation: grw, grw2 3.5s infinite;
-            
+
+            animation: grw, grw2 5s infinite;
+
 
           }
         }
@@ -509,52 +607,70 @@
       grid-row: 1;
       grid-column: 2/5;
       margin-top: 48em;
-      margin-left: 1.5em;
+      margin-left: .5em;
+      color: white;
+
+
+
 
 
 
       footer {
-
+        clear: both;
+        padding: 1em 10%;
+        color: #fff;
+        background: #17585ed2;
+        border-radius: 7px;
+        border: 2px solid #fff;
         text-align: center;
 
-        grid-column: 1/5;
-        margin-top: 1em;
+      }
 
+      footer a {
+        display: inline-block;
 
+        width: 40px;
+        height: 40px;
+        margin: 2em;
+        position: relative;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: x-large;
 
-
-        .zen-validate-html:hover,
-        .zen-validate-css:hover,
-        .zen-license:hover,
-        .zen-accessibility:hover,
-        .zen-github:hover
-        {
-
-        color: $footer-color;
-        font-size: 50px;
-
-        transition: font-size 1s;
-        margin: 50px auto 0;
 
         animation-name: grw, grw2;
-        animation-duration: .8s;
 
-        animation-direction: alternate-reverse;
+        animation: grw, grw2 5.5s infinite;
+      }
+
+      footer a:hover,
+      footer a:focus {
+        color: rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+        -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+        -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+        transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
 
 
 
 
       }
 
-
-      a {
-        margin: 3em;
-        font-size: 20px;
- 
-
+      footer a:visited {
+        color: rgba(255, 255, 255, 0.2);
 
       }
 
+      footer a::before {
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        overflow: visible;
+        font-size: 36px;
+        text-indent: 0;
+
+
+      }
 
 
 
@@ -573,23 +689,41 @@
   grid-row: 1;
   grid-column: 1/2;
   margin-top: 27em;
+  height: 76.3%;
+  background-image: url(images/arena.jpg);
+  text-align: left;
+
+  
+    a:nth-child(2) { font-size: 15px; color: $autors;}
+  
+
+  .design-archives,
+  .zen-resources {
+    margin-top: 6em;
+    display: block;
+
+  }
+
+
 
 
   nav {
     ul {
       li {
-        font-size: x-large;
-        margin: 20px;
-        border-radius: 5px;
+        color: $primary;
+        a{
+          font-size: 25px;
+          margin: 5px;
+          border-radius: 5px;
+          
+        }
+       
       }
     }
 
 
   }
 
-
-
-}
 
 
 }
