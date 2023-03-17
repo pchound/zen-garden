@@ -257,13 +257,12 @@ main h2 {
       opacity: 1;
       color: #ff9cb9; } }
   .page-wrapper {
-    display: grid;
-    /*grid-template-rows: auto auto auto auto;*/ }
-
-  header {
-    grid-row: 1; }
+    display: grid; }
 
   .sidebar {
+    grid-row: 1; }
+
+  #zen-intro > header > img {
     grid-row: 2; }
 
   #zen-preamble {
@@ -312,17 +311,50 @@ main h2 {
       font-size: 40px; }
 
   .sidebar {
+    grid-row: 1;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 90%;
+    margin-bottom: -10px;
+    background-image: url(images/hamburger.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FDEDED; }
+
+  .sidebar:hover {
+    cursor: pointer;
+    background-color: #ffd3d3; }
+
+  .design-selection, .design-archives, .zen-resources {
+    display: none; }
+
+  .design-selection.active, .design-archives.active, .zen-resources.design-archives.active {
+    display: block; }
+
+  .sidebar.active {
+    height: auto;
+    width: 100%;
+    position: relative;
+    left: 0%;
+    margin-bottom: -10px;
+    background-image: url(images/hamburger.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FDEDED;
     border: 2px solid #fff;
     border-radius: 10px;
     background-image: url(images/image1.jpg);
     margin-top: 1em; }
-    .sidebar h3 {
+    .sidebar.active h3 {
       font-family: "Croissant One", cursive;
       font-size: x-large;
       text-align: center; }
-    .sidebar nav ul {
+    .sidebar.active nav ul {
       list-style: none; }
-      .sidebar nav ul :hover {
+      .sidebar.active nav ul :hover {
         width: 200px;
         height: 100px;
         border-radius: 10px;
@@ -332,27 +364,27 @@ main h2 {
         font-size: 1.2em;
         font-family: "Croissant One", cursive;
         background-image: url(images/image.jpg); }
-    .sidebar nav li {
+    .sidebar.active nav li {
       background-color: #f5a6bd49;
       margin: 20px;
       font-size: larger;
       font-family: "Philosopher", sans-serif;
       border: 1px #FA9BB7;
       list-style-position: unset; }
-      .sidebar nav li a {
+      .sidebar.active nav li a {
         color: inherit; }
-      .sidebar nav li a {
+      .sidebar.active nav li a {
         background: linear-gradient(to right, #f5a6bd49, #f5a6bd49), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
         background-size: 100% 3px, 0 3px;
         background-position: 100% 100%, 0 100%;
         background-repeat: no-repeat;
         transition: background-size 400ms; }
-      .sidebar nav li a:hover {
+      .sidebar.active nav li a:hover {
         background-size: 0 3px, 100% 3px;
         color: #222020; }
-    .sidebar .zen-resources ul {
+    .sidebar.active .zen-resources ul {
       list-style: none; }
-      .sidebar .zen-resources ul :hover {
+      .sidebar.active .zen-resources ul :hover {
         width: 200px;
         height: 100px;
         border-radius: 10px;
@@ -362,22 +394,22 @@ main h2 {
         font-size: 1.2em;
         font-family: "Croissant One", cursive;
         background-image: url(images/image.jpg); }
-    .sidebar .zen-resources li {
+    .sidebar.active .zen-resources li {
       background-color: #f5a6bd49;
       margin: 20px;
       font-size: x-large;
       font-family: "Philosopher", sans-serif;
       border: 1px #FA9BB7;
       list-style-position: unset; }
-      .sidebar .zen-resources li a {
+      .sidebar.active .zen-resources li a {
         color: inherit; }
-      .sidebar .zen-resources li a {
+      .sidebar.active .zen-resources li a {
         background: linear-gradient(to right, #f5a6bd49, #f5a6bd49), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
         background-size: 100% 3px, 0 3px;
         background-position: 100% 100%, 0 100%;
         background-repeat: no-repeat;
         transition: background-size 400ms; }
-      .sidebar .zen-resources li a:hover {
+      .sidebar.active .zen-resources li a:hover {
         background-size: 0 3px, 100% 3px;
         color: #222020; } }
 /* -------------------------------------------------------Medium  --------------------------------------------------------------*/
