@@ -271,6 +271,8 @@ main h2 {
     background-color: #846060;
     margin: 0;
     padding: 1em; }
+    body .sidebar {
+      margin-top: 1em; }
 
   .intro.preamble {
     margin-top: 3em; }
@@ -515,6 +517,8 @@ main h2 {
     color: #060606;
     background-color: #ffaec537;
     margin: 0; }
+    body .sidebar {
+      margin-top: 27em; }
 
   .page-wrapper {
     display: grid;
@@ -608,7 +612,6 @@ main h2 {
 .sidebar {
   grid-row: 1;
   grid-column: 1/2;
-  margin-top: 27em;
   height: 76.3%;
   background-image: url(images/arena.jpg);
   text-align: left; }
