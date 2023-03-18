@@ -29,27 +29,6 @@
 
   }
 
-  .page-wrapper
-  {
-    display: grid;
-    /*grid-template-rows: auto auto auto auto;*/
-  }
-header
-{
-  grid-row: 1;
-}
-.sidebar
-{
-  grid-row: 2;
-}
-#zen-preamble
-{
-  grid-row: 3;
-}
-#zen-supporting
-{
-  grid-row: 4;
-}
 
 
   html {
@@ -65,10 +44,6 @@ header
     background-color: $primary;
     margin: 0;
     padding: 1em;
-
-    .sidebar{
-      margin-top: 2em;
-    }
   }
 
   .intro.preamble {
@@ -156,59 +131,13 @@ header
 
   }
 
+  .sidebar {
 
-  .sidebar
-  {
-    grid-row: 1;
-    height: 40px;
-    width: 40px;
-    position: relative;
-    left: 90%;
-    margin-bottom: -10px;
-    background-image: url(images/hamburger.png);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #FDEDED;
-  }
+    grid-row: 2;
 
-  .sidebar:hover
-  {
-    cursor: pointer;
-    background-color: #ffd3d3;
-  }
   
-  .design-selection, .design-archives, .zen-resources
-  {
-    display: none;
-  }
-
-  .design-selection.active, .design-archives.active, .zen-resources.design-archives.active
-  {
-    display: block;
-  }
-
-  .sidebar.active {
-
-    height: auto;
-    width: 100%;
-    position: relative;
-    left: 0%;
-    margin-bottom: -10px;
-    background-image: url(images/hamburger.png);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #FDEDED;
-
-
-
-
-
-  border: 2px solid #fff;
-  border-radius: 10px;
-  background-image: url(images/image1.jpg);
-  margin-top: 1em;
+    border: 2px solid #fff;
+    border-radius: 10px;
 
 
 
@@ -447,9 +376,7 @@ header
     background-color: $lcolor;
     margin: 0;
 
-    .sidebar{
-      margin-top: 2em;
-    }
+
 
   }
 
@@ -533,7 +460,6 @@ header
       }
     }
 
-    
   }
 
 
@@ -586,11 +512,6 @@ header
     background-color: $lcolor;
     margin: 0;
 
-
-    .sidebar{
-      margin-top: 27em;
-    }
-   
   }
 
   .page-wrapper {
@@ -767,7 +688,7 @@ header
 .sidebar {
   grid-row: 1;
   grid-column: 1/2;
-  
+  margin-top: 27em;
   height: 76.3%;
   background-image: url(images/arena.jpg);
   text-align: left;
