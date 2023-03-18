@@ -262,6 +262,22 @@ main h2 {
     to {
       opacity: 1;
       color: #f296b2ad; } }
+  .page-wrapper {
+    display: grid;
+    /*grid-template-rows: auto auto auto auto;*/ }
+
+  header {
+    grid-row: 1; }
+
+  .sidebar {
+    grid-row: 2; }
+
+  #zen-preamble {
+    grid-row: 3; }
+
+  #zen-supporting {
+    grid-row: 4; }
+
   html {
     background-color: #ffffff; }
 
@@ -323,7 +339,6 @@ main h2 {
       animation: grw, grw2 3.5s infinite; }
 
   .sidebar {
-    grid-row: 2;
     border: 2px solid #fff;
     border-radius: 10px; }
     .sidebar h3 {
