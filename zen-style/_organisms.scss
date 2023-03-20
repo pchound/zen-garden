@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'atoms';
 @import "molecules";
-
+@import 'dropdown';
 
 
 @media only screen and (min-width: 2rem) {
@@ -32,7 +32,6 @@
   .page-wrapper
   {
     display: grid;
-    /*grid-template-rows: auto auto auto auto;*/
   }
 header
 {
@@ -155,27 +154,14 @@ header
 
 
   }
-
-  .sidebar {
-
-  .sidebar
+  body > div > aside > div
   {
-    grid-row: 1;
-    height: 40px;
-    width: 40px;
-    position: relative;
-    left: 90%;
-    margin-bottom: -10px;
-    background-image: url(images/hamburger.png);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #FDEDED;
+    display: none;
   }
 
-  
-    border: 2px solid #fff;
-    border-radius: 10px;
+
+
+  .sidebar {
 
 
 
@@ -728,7 +714,7 @@ header
 }
 
 .sidebar {
-  grid-row: 1;
+  /*grid-row: 1;
   grid-column: 1/2;
 
   height: 76.3%;
@@ -737,7 +723,7 @@ header
 
   
     a:nth-child(2) { font-size: 15px; color: $autors;}
-  
+  */
 
   .design-archives,
   .zen-resources {

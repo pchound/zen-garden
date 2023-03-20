@@ -251,6 +251,23 @@ main h2 {
   font-family: "Aokahori"; }
 
 @media only screen and (min-width: 2rem) {
+  .sidebar:hover {
+    cursor: pointer; }
+
+  .sidebar {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 90%;
+    margin-bottom: -10px;
+    background-image: url(images/hamburger.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: pink; } }
+@media only screen and (min-width: 2rem) {
   @keyframes grw2 {
     from {
       opacity: 1;
@@ -263,8 +280,7 @@ main h2 {
       opacity: 1;
       color: #f296b2ad; } }
   .page-wrapper {
-    display: grid;
-    /*grid-template-rows: auto auto auto auto;*/ }
+    display: grid; }
 
   header {
     grid-row: 2; }
@@ -338,61 +354,59 @@ main h2 {
       animation-name: grw, grw2;
       animation: grw, grw2 3.5s infinite; }
 
-  .sidebar {
-    border: 2px solid #fff;
-    border-radius: 10px;
-    background-image: url(images/image1.jpg);
-    margin-top: 1em; }
-    .sidebar.active h3 {
-      font-family: "Croissant One", cursive;
-      font-size: medium;
-      text-align: center; }
-    .sidebar.active nav ul {
-      list-style: none; }
-      .sidebar.active nav ul :hover {
-        border-radius: 10px;
-        background: #f296b2ad;
-        transition: width 1s, height 1s, margin 3s;
-        margin: auto 0;
-        font-size: 1em;
-        font-family: "Croissant One", cursive; }
-    .sidebar.active nav li {
-      background-color: #f5a6bda1;
-      margin: 22px;
-      font-size: medium;
-      font-family: "Philosopher", sans-serif;
-      border: 1px #FA9BB7;
-      list-style-position: unset; }
-      .sidebar.active nav li a {
-        color: #323938; }
-    .sidebar.active .zen-resources ul {
-      list-style: none;
+  body > div > aside > div {
+    display: none; }
+
+  .sidebar h3 {
+    font-family: "Croissant One", cursive;
+    font-size: medium;
+    text-align: center; }
+  .sidebar nav ul {
+    list-style: none; }
+    .sidebar nav ul :hover {
+      border-radius: 10px;
+      background: #f296b2ad;
+      transition: width 1s, height 1s, margin 3s;
+      margin: auto 0;
+      font-size: 1em;
+      font-family: "Croissant One", cursive; }
+  .sidebar nav li {
+    background-color: #f5a6bda1;
+    margin: 22px;
+    font-size: medium;
+    font-family: "Philosopher", sans-serif;
+    border: 1px #FA9BB7;
+    list-style-position: unset; }
+    .sidebar nav li a {
       color: #323938; }
-      .sidebar.active .zen-resources ul :hover {
-        border-radius: 10px;
-        background: #f296b2ad;
-        transition: width 1s, height 1s, margin 3s;
-        margin: auto 0;
-        font-size: 1em;
-        font-family: "Croissant One", cursive; }
-    .sidebar.active .zen-resources li {
-      background-color: #f5a6bda1;
-      margin: 20px;
-      font-size: x-large;
-      font-family: "Philosopher", sans-serif;
-      border: 1px #FA9BB7;
-      list-style-position: unset; }
-      .sidebar.active .zen-resources li a {
-        color: inherit; }
-      .sidebar.active .zen-resources li a {
-        background: linear-gradient(to right, #f5a6bda1, #f5a6bda1), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
-        background-size: 100% 3px, 0 3px;
-        background-position: 100% 100%, 0 100%;
-        background-repeat: no-repeat;
-        transition: background-size 400ms; }
-      .sidebar.active .zen-resources li a:hover {
-        background-size: 0 3px, 100% 3px;
-        color: #222020; }
+  .sidebar .zen-resources ul {
+    list-style: none;
+    color: #323938; }
+    .sidebar .zen-resources ul :hover {
+      border-radius: 10px;
+      background: #f296b2ad;
+      transition: width 1s, height 1s, margin 3s;
+      margin: auto 0;
+      font-size: 1em;
+      font-family: "Croissant One", cursive; }
+  .sidebar .zen-resources li {
+    background-color: #f5a6bda1;
+    margin: 20px;
+    font-size: x-large;
+    font-family: "Philosopher", sans-serif;
+    border: 1px #FA9BB7;
+    list-style-position: unset; }
+    .sidebar .zen-resources li a {
+      color: inherit; }
+    .sidebar .zen-resources li a {
+      background: linear-gradient(to right, #f5a6bda1, #f5a6bda1), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
+      background-size: 100% 3px, 0 3px;
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 400ms; }
+    .sidebar .zen-resources li a:hover {
+      background-size: 0 3px, 100% 3px;
+      color: #222020; }
 
   footer {
     clear: both;
@@ -627,14 +641,16 @@ main h2 {
         font-size: 36px;
         text-indent: 0; } }
 .sidebar {
-  grid-row: 1;
+  /*grid-row: 1;
   grid-column: 1/2;
+
   height: 76.3%;
   background-image: url(images/arena.jpg);
-  text-align: left; }
-  .sidebar a:nth-child(2) {
-    font-size: 15px;
-    color: #962a2a; }
+  text-align: left;
+
+  
+    a:nth-child(2) { font-size: 15px; color: $autors;}
+  */ }
   .sidebar .design-archives,
   .sidebar .zen-resources {
     margin-top: 6em;
