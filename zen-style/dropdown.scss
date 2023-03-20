@@ -1,22 +1,51 @@
 @media only screen and (min-width: 2rem) {
 
-.sidebar:hover
-{
-  cursor: pointer;
+    .sidebar:hover
+    {
+    cursor: pointer;
+    }
+
+    .sidebar {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 90%;
+    margin-bottom: -10px;
+    background-image: url(images/hamburger.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: pink;
+    margin-bottom: 10px;
+    }
+
+    body > div > aside > div
+    {
+        display: none;
+    }
+
+    #toggle1 
+    {
+        display: none;
+    }
+
+    .sidebar input[type="checkbox"]:checked ~ .sidebar
+    {
+        background-color: red;
+    }
 }
 
-.sidebar {
-height: 40px;
-width: 40px;
-position: relative;
-left: 90%;
-margin-bottom: -10px;
-background-image: url(images/hamburger.png);
-background-size: 70%;
-background-position: center;
-background-repeat: no-repeat;
-border: 2px solid #fff;
-border-radius: 10px;
-background-color: pink;
-}
-}
+
+
+
+
+
+/*
+@media only screen and (min-width: 35rem) {
+    body > div > aside > div
+    {
+      display: block;
+    }
+}*/

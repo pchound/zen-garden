@@ -266,7 +266,24 @@ main h2 {
     background-repeat: no-repeat;
     border: 2px solid #fff;
     border-radius: 10px;
-    background-color: pink; } }
+    background-color: pink;
+    margin-bottom: 10px; }
+
+  body > div > aside > div {
+    display: none; }
+
+  #toggle1 {
+    display: none; }
+
+  .sidebar input[type="checkbox"]:checked ~ .sidebar {
+    background-color: red; } }
+/*
+@media only screen and (min-width: 35rem) {
+    body > div > aside > div
+    {
+      display: block;
+    }
+}*/
 @media only screen and (min-width: 2rem) {
   @keyframes grw2 {
     from {
@@ -353,9 +370,6 @@ main h2 {
       font-size: 35px;
       animation-name: grw, grw2;
       animation: grw, grw2 3.5s infinite; }
-
-  body > div > aside > div {
-    display: none; }
 
   .sidebar h3 {
     font-family: "Croissant One", cursive;
