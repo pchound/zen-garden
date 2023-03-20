@@ -267,10 +267,10 @@ main h2 {
     /*grid-template-rows: auto auto auto auto;*/ }
 
   header {
-    grid-row: 1; }
+    grid-row: 2; }
 
   .sidebar {
-    grid-row: 2; }
+    grid-row: 1; }
 
   #zen-preamble {
     grid-row: 3; }
@@ -339,56 +339,90 @@ main h2 {
       animation: grw, grw2 3.5s infinite; }
 
   .sidebar {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 90%;
+    margin-bottom: -10px;
+    background-image: url(images/hamburger.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FDEDED; }
+
+  .sidebar:hover {
+    cursor: pointer;
+    background-color: #ffd3d3; }
+
+  .design-selection, .design-archives, .zen-resources {
+    display: none; }
+
+  .design-selection.active, .design-archives.active, .zen-resources.design-archives.active {
+    display: block; }
+
+  .sidebar.active {
+    height: auto;
+    width: 100%;
+    position: relative;
+    left: 0%;
+    margin-bottom: -10px;
+    background-image: url(images/hamburger.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FDEDED;
     border: 2px solid #fff;
-    border-radius: 10px; }
-    .sidebar h3 {
+    border-radius: 10px;
+    background-image: url(images/image1.jpg);
+    margin-top: 1em; }
+    .sidebar.active h3 {
       font-family: "Croissant One", cursive;
       font-size: medium;
       text-align: center; }
-    .sidebar nav ul {
+    .sidebar.active nav ul {
       list-style: none; }
-      .sidebar nav ul :hover {
+      .sidebar.active nav ul :hover {
         border-radius: 10px;
         background: #f296b2ad;
         transition: width 1s, height 1s, margin 3s;
         margin: auto 0;
         font-size: 1em;
         font-family: "Croissant One", cursive; }
-    .sidebar nav li {
+    .sidebar.active nav li {
       background-color: #f5a6bda1;
       margin: 22px;
       font-size: medium;
       font-family: "Philosopher", sans-serif;
       border: 1px #FA9BB7;
       list-style-position: unset; }
-      .sidebar nav li a {
+      .sidebar.active nav li a {
         color: #323938; }
-    .sidebar .zen-resources ul {
+    .sidebar.active .zen-resources ul {
       list-style: none;
       color: #323938; }
-      .sidebar .zen-resources ul :hover {
+      .sidebar.active .zen-resources ul :hover {
         border-radius: 10px;
         background: #f296b2ad;
         transition: width 1s, height 1s, margin 3s;
         margin: auto 0;
         font-size: 1em;
         font-family: "Croissant One", cursive; }
-    .sidebar .zen-resources li {
+    .sidebar.active .zen-resources li {
       background-color: #f5a6bda1;
       margin: 20px;
       font-size: x-large;
       font-family: "Philosopher", sans-serif;
       border: 1px #FA9BB7;
       list-style-position: unset; }
-      .sidebar .zen-resources li a {
+      .sidebar.active .zen-resources li a {
         color: inherit; }
-      .sidebar .zen-resources li a {
+      .sidebar.active .zen-resources li a {
         background: linear-gradient(to right, #f5a6bda1, #f5a6bda1), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
         background-size: 100% 3px, 0 3px;
         background-position: 100% 100%, 0 100%;
         background-repeat: no-repeat;
         transition: background-size 400ms; }
-      .sidebar .zen-resources li a:hover {
+      .sidebar.active .zen-resources li a:hover {
         background-size: 0 3px, 100% 3px;
         color: #222020; }
 
