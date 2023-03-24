@@ -7,7 +7,7 @@
   line-height: $line-height;
 }
 
-@mixin set-footer-logo-svg($url){
+@mixin set-footer-logo-svg($url, $colo: $grey-sidebar)  {
  
   background-image: $url;
   background-size: contain;
@@ -96,6 +96,8 @@ footer{
 
   .zen-validate-html{
       @include set-footer-logo-svg(url(svg/html5.svg));
+
+     
   }
 
   .zen-validate-css{
@@ -115,4 +117,8 @@ footer{
       @include set-footer-logo-svg(url(svg/square-github.svg));
   }
 
+}
+
+.extra1, .extra2, .extra3, .extra4, .extra5, .extra6{
+  display: none;
 }
