@@ -326,6 +326,9 @@
 /* -------------------------------------------------------Medium  --------------------------------------------------------------*/
 
 @media only screen and (min-width: 35rem) {
+
+ 
+
   @keyframes slidein {
     from {
       margin-left: 100%;
@@ -377,7 +380,7 @@
 
   body {
     font-family: $fonts-body;
-
+   
     color: $text-dark;
     background-color: $lcolor;
     margin: 0;
@@ -513,7 +516,6 @@
 
   body {
     font-family: $fonts-body;
-
     color: $text-dark;
     background-color: $lcolor;
     margin: 0;
@@ -609,16 +611,29 @@
       margin-top: 34em;
       height: 225px;
 
-
-
     }
+#zen-summary
+{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#zen-preamble
+{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
     #zen-supporting {
       grid-row: 1;
       grid-column: 2/5;
       margin-top: 48em;
-      margin-left: .5em;
       
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
 
 
 
