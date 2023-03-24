@@ -53,6 +53,57 @@ a {
 a:hover {
   border-color: #8acdcb; }
 
+footer .zen-validate-html {
+  background-image: url(svg/html5.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+footer .zen-validate-css {
+  background-image: url(svg/css3.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+footer .zen-license {
+  background-image: url(svg/closed-captioning-solid.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+footer .zen-accessibility {
+  background-image: url(svg/universal-access.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+footer .zen-github {
+  background-image: url(svg/square-github.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+
 h2 {
   margin: 0; }
 
@@ -101,6 +152,57 @@ a {
 
 a:hover {
   border-color: #8acdcb; }
+
+footer .zen-validate-html {
+  background-image: url(svg/html5.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+footer .zen-validate-css {
+  background-image: url(svg/css3.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+footer .zen-license {
+  background-image: url(svg/closed-captioning-solid.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+footer .zen-accessibility {
+  background-image: url(svg/universal-access.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+footer .zen-github {
+  background-image: url(svg/square-github.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
 
 @keyframes neon {
   0%,
@@ -196,6 +298,57 @@ a {
 a:hover {
   border-color: #8acdcb; }
 
+footer .zen-validate-html {
+  background-image: url(svg/html5.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+footer .zen-validate-css {
+  background-image: url(svg/css3.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+footer .zen-license {
+  background-image: url(svg/closed-captioning-solid.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+footer .zen-accessibility {
+  background-image: url(svg/universal-access.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+footer .zen-github {
+  background-image: url(svg/square-github.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+
 h2 {
   margin: 0; }
 
@@ -244,6 +397,57 @@ a {
 
 a:hover {
   border-color: #8acdcb; }
+
+footer .zen-validate-html {
+  background-image: url(svg/html5.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+footer .zen-validate-css {
+  background-image: url(svg/css3.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+footer .zen-license {
+  background-image: url(svg/closed-captioning-solid.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+footer .zen-accessibility {
+  background-image: url(svg/universal-access.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
+footer .zen-github {
+  background-image: url(svg/square-github.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  text-indent: -999px;
+  text-align: left;
+  overflow: hidden; }
 
 @keyframes neon {
   0%,
@@ -628,8 +832,7 @@ main h2 {
         margin: 2em;
         position: relative;
         color: rgba(255, 255, 255, 0.5);
-        font-size: x-large;
-        animation: neon 5s ease infinite; }
+        font-size: x-large; }
       .page-wrapper #zen-supporting footer a:hover,
       .page-wrapper #zen-supporting footer a:focus {
         color: rgba(255, 255, 255, 0.3);
