@@ -269,7 +269,7 @@ main h2 {
     background-color: pink;
     margin-bottom: 10px; }
 
-  body > div > aside > div {
+  #design-archives, #design-selection, #zen-resources {
     display: none; }
 
   #toggle1 {
