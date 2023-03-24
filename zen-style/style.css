@@ -102,8 +102,21 @@ a {
 a:hover {
   border-color: #8acdcb; }
 
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #FA9BB7, 0 0 10px #FA9BB7, 0 0 10px #FA9BB7, 0 0 10px #FA9BB7, 0 0 2px #4cbc79, 1px 1px 1px #4cbc79;
+    color: #f5efcb; }
+  50% {
+    text-shadow: 0 0 2px #FA9BB7, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 2px 2px 2px #fff;
+    color: #eda0d3; } }
 body {
   background-image: url(images/ornament.png); }
+  body abbr {
+    color: #8acdcb; }
+  body a {
+    color: #FA9BB7;
+    font-size: larger; }
 
 .summary {
   font-size: larger;
@@ -126,6 +139,13 @@ body {
 
 main h2 {
   font-family: "Aokahori"; }
+
+#zen-supporting {
+  color: white; }
+  #zen-supporting h3,
+  #zen-supporting h1 {
+    text-align: center;
+    margin: 1rem auto; }
 
 h2 {
   margin: 0; }
@@ -225,8 +245,21 @@ a {
 a:hover {
   border-color: #8acdcb; }
 
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #FA9BB7, 0 0 10px #FA9BB7, 0 0 10px #FA9BB7, 0 0 10px #FA9BB7, 0 0 2px #4cbc79, 1px 1px 1px #4cbc79;
+    color: #f5efcb; }
+  50% {
+    text-shadow: 0 0 2px #FA9BB7, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 2px 2px 2px #fff;
+    color: #eda0d3; } }
 body {
   background-image: url(images/ornament.png); }
+  body abbr {
+    color: #8acdcb; }
+  body a {
+    color: #FA9BB7;
+    font-size: larger; }
 
 .summary {
   font-size: larger;
@@ -250,40 +283,13 @@ body {
 main h2 {
   font-family: "Aokahori"; }
 
-@media only screen and (min-width: 2rem) {
-  .sidebar:hover {
-    cursor: pointer; }
+#zen-supporting {
+  color: white; }
+  #zen-supporting h3,
+  #zen-supporting h1 {
+    text-align: center;
+    margin: 1rem auto; }
 
-  .sidebar {
-    height: 40px;
-    width: 40px;
-    position: relative;
-    left: 90%;
-    margin-bottom: -10px;
-    background-image: url(images/hamburger.png);
-    background-size: 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    background-color: pink;
-    margin-bottom: 10px; }
-
-  body > div > aside > div {
-    display: none; }
-
-  #toggle1 {
-    display: none; }
-
-  .sidebar input[type="checkbox"]:checked ~ .sidebar {
-    background-color: red; } }
-/*
-@media only screen and (min-width: 35rem) {
-    body > div > aside > div
-    {
-      display: block;
-    }
-}*/
 @media only screen and (min-width: 2rem) {
   @keyframes grw2 {
     from {
@@ -296,21 +302,6 @@ main h2 {
     to {
       opacity: 1;
       color: #f296b2ad; } }
-  .page-wrapper {
-    display: grid; }
-
-  header {
-    grid-row: 2; }
-
-  .sidebar {
-    grid-row: 1; }
-
-  #zen-preamble {
-    grid-row: 3; }
-
-  #zen-supporting {
-    grid-row: 4; }
-
   html {
     background-color: #ffffff; }
 
@@ -371,56 +362,60 @@ main h2 {
       animation-name: grw, grw2;
       animation: grw, grw2 3.5s infinite; }
 
-  .sidebar h3 {
-    font-family: "Croissant One", cursive;
-    font-size: medium;
-    text-align: center; }
-  .sidebar nav ul {
-    list-style: none; }
-    .sidebar nav ul :hover {
-      border-radius: 10px;
-      background: #f296b2ad;
-      transition: width 1s, height 1s, margin 3s;
-      margin: auto 0;
-      font-size: 1em;
-      font-family: "Croissant One", cursive; }
-  .sidebar nav li {
-    background-color: #f5a6bda1;
-    margin: 22px;
-    font-size: medium;
-    font-family: "Philosopher", sans-serif;
-    border: 1px #FA9BB7;
-    list-style-position: unset; }
-    .sidebar nav li a {
+  .sidebar {
+    grid-row: 2;
+    border: 2px solid #fff;
+    border-radius: 10px; }
+    .sidebar h3 {
+      font-family: "Croissant One", cursive;
+      font-size: medium;
+      text-align: center; }
+    .sidebar nav ul {
+      list-style: none; }
+      .sidebar nav ul :hover {
+        border-radius: 10px;
+        background: #f296b2ad;
+        transition: width 1s, height 1s, margin 3s;
+        margin: auto 0;
+        font-size: 1em;
+        font-family: "Croissant One", cursive; }
+    .sidebar nav li {
+      background-color: #f5a6bda1;
+      margin: 22px;
+      font-size: medium;
+      font-family: "Philosopher", sans-serif;
+      border: 1px #FA9BB7;
+      list-style-position: unset; }
+      .sidebar nav li a {
+        color: #323938; }
+    .sidebar .zen-resources ul {
+      list-style: none;
       color: #323938; }
-  .sidebar .zen-resources ul {
-    list-style: none;
-    color: #323938; }
-    .sidebar .zen-resources ul :hover {
-      border-radius: 10px;
-      background: #f296b2ad;
-      transition: width 1s, height 1s, margin 3s;
-      margin: auto 0;
-      font-size: 1em;
-      font-family: "Croissant One", cursive; }
-  .sidebar .zen-resources li {
-    background-color: #f5a6bda1;
-    margin: 20px;
-    font-size: x-large;
-    font-family: "Philosopher", sans-serif;
-    border: 1px #FA9BB7;
-    list-style-position: unset; }
-    .sidebar .zen-resources li a {
-      color: inherit; }
-    .sidebar .zen-resources li a {
-      background: linear-gradient(to right, #f5a6bda1, #f5a6bda1), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
-      background-size: 100% 3px, 0 3px;
-      background-position: 100% 100%, 0 100%;
-      background-repeat: no-repeat;
-      transition: background-size 400ms; }
-    .sidebar .zen-resources li a:hover {
-      background-size: 0 3px, 100% 3px;
-      color: #222020; }
+      .sidebar .zen-resources ul :hover {
+        border-radius: 10px;
+        background: #f296b2ad;
+        transition: width 1s, height 1s, margin 3s;
+        margin: auto 0;
+        font-size: 1em;
+        font-family: "Croissant One", cursive; }
+    .sidebar .zen-resources li {
+      background-color: #f5a6bda1;
+      margin: 20px;
+      font-size: x-large;
+      font-family: "Philosopher", sans-serif;
+      border: 1px #FA9BB7;
+      list-style-position: unset; }
+      .sidebar .zen-resources li a {
+        color: inherit; }
+      .sidebar .zen-resources li a {
+        background: linear-gradient(to right, #f5a6bda1, #f5a6bda1), linear-gradient(to right, #ffaec537, #ffaec537, #ffaec537);
+        background-size: 100% 3px, 0 3px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms; }
+      .sidebar .zen-resources li a:hover {
+        background-size: 0 3px, 100% 3px;
+        color: #222020; }
 
   footer {
     clear: both;
@@ -617,8 +612,7 @@ main h2 {
       grid-row: 1;
       grid-column: 2/5;
       margin-top: 48em;
-      margin-left: .5em;
-      color: white; }
+      margin-left: .5em; }
       .page-wrapper #zen-supporting footer {
         clear: both;
         padding: 1em 10%;
@@ -635,8 +629,7 @@ main h2 {
         position: relative;
         color: rgba(255, 255, 255, 0.5);
         font-size: x-large;
-        animation-name: grw, grw2;
-        animation: grw, grw2 5.5s infinite; }
+        animation: neon 5s ease infinite; }
       .page-wrapper #zen-supporting footer a:hover,
       .page-wrapper #zen-supporting footer a:focus {
         color: rgba(255, 255, 255, 0.3);
@@ -655,16 +648,14 @@ main h2 {
         font-size: 36px;
         text-indent: 0; } }
 .sidebar {
-  /*grid-row: 1;
+  grid-row: 1;
   grid-column: 1/2;
-
   height: 76.3%;
   background-image: url(images/arena.jpg);
-  text-align: left;
-
-  
-    a:nth-child(2) { font-size: 15px; color: $autors;}
-  */ }
+  text-align: left; }
+  .sidebar a:nth-child(2) {
+    font-size: 15px;
+    color: #962a2a; }
   .sidebar .design-archives,
   .sidebar .zen-resources {
     margin-top: 6em;

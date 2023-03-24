@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'atoms';
 @import "molecules";
-@import 'dropdown';
+
 
 
 @media only screen and (min-width: 2rem) {
@@ -29,26 +29,6 @@
 
   }
 
-  .page-wrapper
-  {
-    display: grid;
-  }
-header
-{
-  grid-row: 2;
-}
-.sidebar
-{
-  grid-row: 1;
-}
-#zen-preamble
-{
-  grid-row: 3;
-}
-#zen-supporting
-{
-  grid-row: 4;
-}
 
 
   html {
@@ -68,6 +48,9 @@ header
     .sidebar{
       margin-top: 1em;
     }
+
+    
+    
   }
 
   .intro.preamble {
@@ -155,10 +138,13 @@ header
 
   }
 
-
-
-
   .sidebar {
+
+    grid-row: 2;
+
+  
+    border: 2px solid #fff;
+    border-radius: 10px;
 
 
 
@@ -633,7 +619,7 @@ header
       grid-column: 2/5;
       margin-top: 48em;
       margin-left: .5em;
-      color: white;
+      
 
 
 
@@ -662,9 +648,7 @@ header
         font-size: x-large;
 
 
-        animation-name: grw, grw2;
-
-        animation: grw, grw2 5.5s infinite;
+        animation: neon 5s ease infinite;
       }
 
       footer a:hover,
@@ -711,7 +695,7 @@ header
 }
 
 .sidebar {
-  /*grid-row: 1;
+  grid-row: 1;
   grid-column: 1/2;
 
   height: 76.3%;
@@ -720,7 +704,7 @@ header
 
   
     a:nth-child(2) { font-size: 15px; color: $autors;}
-  */
+  
 
   .design-archives,
   .zen-resources {
