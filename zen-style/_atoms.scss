@@ -7,6 +7,20 @@
   line-height: $line-height;
 }
 
+@mixin set-footer-logo-svg($url, $colo: $grey-sidebar)  {
+ 
+  background-image: $url;
+  background-size: contain;
+  background-repeat: no-repeat;            
+  max-width: 100%;
+  width:50px;
+  height:50px;
+  text-indent:-999px;
+  text-align:left;
+  overflow:hidden;
+          
+}
+
 @mixin set-flex($direction: row, $wrap: wrap) {
   display: flex;
   flex-flow: $direction $wrap;
@@ -76,4 +90,35 @@ a {
 }
 a:hover {
   border-color: $accent1;
+}
+
+footer{
+
+  .zen-validate-html{
+      @include set-footer-logo-svg(url(svg/html5.svg));
+
+     
+  }
+
+  .zen-validate-css{
+      @include set-footer-logo-svg(url(svg/css3.svg));
+
+  }
+
+  .zen-license{
+      @include set-footer-logo-svg(url(svg/closed-captioning-solid.svg));
+  }
+
+  .zen-accessibility{
+      @include set-footer-logo-svg(url(svg/universal-access.svg));
+  }
+
+  .zen-github{
+      @include set-footer-logo-svg(url(svg/square-github.svg));
+  }
+
+}
+
+.extra1, .extra2, .extra3, .extra4, .extra5, .extra6{
+  display: none;
 }

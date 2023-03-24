@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'atoms';
 @import "molecules";
-@import 'dropdown';
+
 
 
 @media only screen and (min-width: 2rem) {
@@ -29,26 +29,6 @@
 
   }
 
-  .page-wrapper
-  {
-    display: grid;
-  }
-header
-{
-  grid-row: 2;
-}
-.sidebar
-{
-  grid-row: 1;
-}
-#zen-preamble
-{
-  grid-row: 3;
-}
-#zen-supporting
-{
-  grid-row: 4;
-}
 
 
   html {
@@ -68,6 +48,9 @@ header
     .sidebar{
       margin-top: 1em;
     }
+
+    
+    
   }
 
   .intro.preamble {
@@ -155,10 +138,13 @@ header
 
   }
 
-
-
-
   .sidebar {
+
+    grid-row: 2;
+
+  
+    border: 2px solid #fff;
+    border-radius: 10px;
 
 
 
@@ -299,11 +285,10 @@ header
     margin: 2em;
     position: relative;
     color: rgba(255, 255, 255, 0.5);
-    font-size: x-large;
+    font-size: large;
+  
+   
 
-    animation-name: grw, grw2;
-
-    animation: grw, grw2 5.5s infinite;
   }
 
   footer a:hover,
@@ -633,7 +618,7 @@ header
       grid-column: 2/5;
       margin-top: 48em;
       margin-left: .5em;
-      color: white;
+      
 
 
 
@@ -654,17 +639,15 @@ header
       footer a {
         display: inline-block;
 
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         margin: 2em;
         position: relative;
         color: rgba(255, 255, 255, 0.5);
         font-size: x-large;
 
 
-        animation-name: grw, grw2;
-
-        animation: grw, grw2 5.5s infinite;
+       
       }
 
       footer a:hover,
@@ -711,16 +694,16 @@ header
 }
 
 .sidebar {
-  /*grid-row: 1;
+  grid-row: 1;
   grid-column: 1/2;
 
-  height: 76.3%;
+  height: 78%;
   background-image: url(images/arena.jpg);
   text-align: left;
 
   
     a:nth-child(2) { font-size: 15px; color: $autors;}
-  */
+  
 
   .design-archives,
   .zen-resources {
