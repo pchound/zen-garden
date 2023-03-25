@@ -54,7 +54,57 @@
 }
 
 
-//................ Absolutr colors and mesaures for the general text...............//
+@keyframes grw2 {
+
+  from {
+    opacity: 1;
+    color: $sideanimacolor;
+  }
+
+  to {
+    opacity: .5;
+  }
+
+  from {
+    opacity: .5;
+
+  }
+
+  to {
+    opacity: 1;
+    color: $sideanimacolor;
+  }
+
+}
+
+//-----------------------------------Header text animation------------------------------//
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 1em;
+    width: 100%;
+  }
+}
+
+@keyframes slidein2 {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 1.5em;
+    width: 100%;
+  }
+}
+
+
+
+//................ Absoluts colors and mesaures for the general text...............//
 body {
  background-image: url(images/ornament.png);
  

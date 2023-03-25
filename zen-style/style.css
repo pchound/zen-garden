@@ -229,6 +229,31 @@ footer .zen-github {
   to {
     opacity: 1;
     color: #f296b2ad; } }
+@keyframes grw2 {
+  from {
+    opacity: 1;
+    color: #f296b2ad; }
+  to {
+    opacity: .5; }
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1;
+    color: #f296b2ad; } }
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 1em;
+    width: 100%; } }
+@keyframes slidein2 {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 1.5em;
+    width: 100%; } }
 body {
   background-image: url(images/ornament.png); }
   body abbr {
@@ -498,6 +523,31 @@ footer .zen-github {
   to {
     opacity: 1;
     color: #f296b2ad; } }
+@keyframes grw2 {
+  from {
+    opacity: 1;
+    color: #f296b2ad; }
+  to {
+    opacity: .5; }
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1;
+    color: #f296b2ad; } }
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 1em;
+    width: 100%; } }
+@keyframes slidein2 {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 1.5em;
+    width: 100%; } }
 body {
   background-image: url(images/ornament.png); }
   body abbr {
@@ -717,31 +767,6 @@ main h2 {
     text-indent: 0; } }
 /* -------------------------------------------------------Medium  --------------------------------------------------------------*/
 @media only screen and (min-width: 35rem) {
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%; }
-    to {
-      margin-left: 1em;
-      width: 100%; } }
-  @keyframes slidein2 {
-    from {
-      margin-left: 100%;
-      width: 300%; }
-    to {
-      margin-left: 1.5em;
-      width: 100%; } }
-  @keyframes grw2 {
-    from {
-      opacity: 1;
-      color: #f296b2ad; }
-    to {
-      opacity: .5; }
-    from {
-      opacity: .5; }
-    to {
-      opacity: 1;
-      color: #f296b2ad; } }
   body {
     font-family: "Philosopher", sans-serif;
     color: #060606;
@@ -796,21 +821,6 @@ main h2 {
       animation: grw2 3.5s infinite; } }
 /* -----------------------------------------------Large ------------------------------------------------------------- */
 @media only screen and (min-width: 64rem) {
-  @keyframes grw {
-    from {
-      transform: scale(0.5);
-      opacity: .8; }
-    to {
-      transform: scale(1);
-      opacity: 0; } }
-  @keyframes grw2 {
-    from {
-      opacity: .5; }
-    to {
-      color: #f296b2ad; } }
-  html {
-    background-color: #ffffff; }
-
   body {
     font-family: "Philosopher", sans-serif;
     color: #060606;
@@ -852,10 +862,10 @@ main h2 {
           animation-name: grw, grw2;
           animation: neon 3.5s infinite; }
     .page-wrapper .summary {
-      margin-top: 23em;
+      margin-top: 22em;
       grid-row: 1;
       grid-column: 2/5;
-      height: 300px; }
+      height: 100px; }
       .page-wrapper .summary a {
         color: #8acdcb; }
         .page-wrapper .summary a :hover {
@@ -866,6 +876,7 @@ main h2 {
     .page-wrapper .preamble {
       grid-row: 2;
       grid-column: 2/5;
+      margin-top: .5em;
       height: 225px; }
     .page-wrapper #zen-summary {
       height: 10em;
