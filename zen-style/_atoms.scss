@@ -6,20 +6,7 @@
   font-size: $size;
   line-height: $line-height;
 }
-//-----------SVG Mixin----------------------//
-@mixin set-footer-logo-svg($url, $colo: $grey-sidebar)  {
- 
-  background-image: $url;
-  background-size: contain;
-  background-repeat: no-repeat;            
-  max-width: 100%;
-  width:50px;
-  height:50px;
-  text-indent:-999px;
-  text-align:left;
-  overflow:hidden;
-          
-}
+
 
 @mixin set-flex($direction: row, $wrap: wrap) {
   display: flex;
@@ -37,6 +24,24 @@
   margin-top: 1em;
   padding-top: 1.5em;
 }
+
+//-----------SVG Mixin----------------------//
+@mixin set-footer-logo-svg($url, $colo: $grey-sidebar)  {
+ 
+  background-image: $url;
+  background-size: contain;
+  background-repeat: no-repeat;            
+  max-width: 100%;
+  width:50px;
+  height:50px;
+  text-indent:-999px;
+  text-align:left;
+  overflow:hidden;
+          
+}
+
+
+
 
 h2{
   margin: 0;
