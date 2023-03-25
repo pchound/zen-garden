@@ -1,12 +1,12 @@
 @import 'variables' ;
 
-
+//----------Principal Mixins-----------//
 @mixin set-font($size: 1em, $line-height: normal, $font: $fonts-body) {
   font-family: $font;
   font-size: $size;
   line-height: $line-height;
 }
-
+//-----------SVG Mixin----------------------//
 @mixin set-footer-logo-svg($url, $colo: $grey-sidebar)  {
  
   background-image: $url;
@@ -91,7 +91,7 @@ a {
 a:hover {
   border-color: $accent1;
 }
-
+//------------------------------Footer SVG-------------------------------//
 footer{
 
   .zen-validate-html{
