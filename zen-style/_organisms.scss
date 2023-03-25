@@ -3,33 +3,11 @@
 @import "molecules";
 
 
+//..................................................Small..........................................//
 
 @media only screen and (min-width: 2rem) {
 
-  @keyframes grw2 {
-
-    from {
-      opacity: 1;
-      color: $sideanimacolor;
-    }
-
-    to {
-      opacity: .5;
-    }
-
-    from {
-      opacity: .5;
-
-    }
-
-    to {
-      opacity: 1;
-      color: $sideanimacolor;
-    }
-
-  }
-
-
+  
 
   html {
     background-color: $background-color;

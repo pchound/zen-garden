@@ -28,6 +28,33 @@
   }
 }
 
+//-------------------------------------Growing Animation for medium and small views----------------//
+
+@keyframes grw2 {
+
+  from {
+    opacity: 1;
+    color: $sideanimacolor;
+  }
+
+  to {
+    opacity: .5;
+  }
+
+  from {
+    opacity: .5;
+
+  }
+
+  to {
+    opacity: 1;
+    color: $sideanimacolor;
+  }
+
+}
+
+
+//................ Absolutr colors and mesaures for the general text...............//
 body {
  background-image: url(images/ornament.png);
  
