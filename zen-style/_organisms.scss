@@ -150,7 +150,7 @@
 
   #zen-summary
   {
-    padding-bottom: 80px;
+    padding-bottom: $fonm;
   }
  
 
@@ -567,7 +567,7 @@
 
       header {
         width: 100%;
-        height: 400px;
+        height: $headerme;
         border-radius: 5px;
         grid-row: 1;
         background-image: url(images/heade.png);
@@ -588,16 +588,18 @@
         h1 {
           margin-left: 1em;
           margin-top: 1.2em;
-          font-size: 80px;
+          font-size: $fonm;
         }
 
         h2 {
+
+          //----------------abbr CSS animation (Neon animation only for large screens-----------------//
           abbr {
 
-            font-size: 80px;
+            font-size: $fonm;
             animation-name: grw, grw2;
 
-            animation: grw, grw2 5s infinite;
+            animation: neon 3.5s infinite
 
 
           }
