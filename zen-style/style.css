@@ -218,6 +218,17 @@ footer .zen-github {
   50% {
     text-shadow: 0 0 2px #FA9BB7, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 2px 2px 2px #fff;
     color: #eda0d3; } }
+@keyframes grw2 {
+  from {
+    opacity: 1;
+    color: #f296b2ad; }
+  to {
+    opacity: .5; }
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1;
+    color: #f296b2ad; } }
 body {
   background-image: url(images/ornament.png); }
   body abbr {
@@ -476,6 +487,17 @@ footer .zen-github {
   50% {
     text-shadow: 0 0 2px #FA9BB7, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 2px 2px 2px #fff;
     color: #eda0d3; } }
+@keyframes grw2 {
+  from {
+    opacity: 1;
+    color: #f296b2ad; }
+  to {
+    opacity: .5; }
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1;
+    color: #f296b2ad; } }
 body {
   background-image: url(images/ornament.png); }
   body abbr {
@@ -521,17 +543,6 @@ main h2 {
       font-size: 18px; }
 
 @media only screen and (min-width: 2rem) {
-  @keyframes grw2 {
-    from {
-      opacity: 1;
-      color: #f296b2ad; }
-    to {
-      opacity: .5; }
-    from {
-      opacity: .5; }
-    to {
-      opacity: 1;
-      color: #f296b2ad; } }
   html {
     background-color: #ffffff; }
 
