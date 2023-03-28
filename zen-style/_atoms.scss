@@ -1,6 +1,6 @@
 @import 'variables' ;
 
-//----------Principal Mixins-----------//
+//----------Principal Mixins----------//
 @mixin set-font($size: 1em, $line-height: normal, $font: $fonts-body) {
   font-family: $font;
   font-size: $size;
